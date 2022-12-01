@@ -1,0 +1,99 @@
+.ftco-section {
+    padding: 14em 0;
+    background: url(../img/sarwaLandingAr.jpg) 50% 100% no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.ftco-section h1{
+    color: #d7ab60 !important;
+    line-height: 2;
+    
+}
+.ftco-section .container{
+    position: relative;
+    z-index: 9999;
+}
+.ftco-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9;
+    height: 100%;
+  }
+
+.login-wrap {
+    position: relative;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.login-wrap .social a {
+    width: 100%;
+    display: block;
+    border: 2px
+ solid #fff;
+    color: #000;
+    background: #fff;
+}
+.ftco-section .form-control {
+    background: transparent;
+    border: none;
+    height: 50px
+;
+    color: #fff!important;
+    border: 2px
+ solid transparent;
+    background: rgba(255,255,255,.08);
+    border-radius: 40px
+;
+    padding-left: 20px
+;
+    padding-right: 20px
+;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    
+}
+.ftco-section .form-control1 {
+    display: block;
+    width: 100%;
+
+    color: #ffffff;
+    background-color:rgba(255, 255, 255, 0.08);
+    padding: 15px 25px;
+    margin-bottom: 30px;
+    border: 2px solid #fff;
+    border-radius: 30px !important;
+    -webkit-transition: border-color .15s ease-in-out , -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out , -webkit-box-shadow .15s ease-in-out;
+    -o-transition: border-color .15s ease-in-out , box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out , box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out , box-shadow .15s ease-in-out , -webkit-box-shadow .15s ease-in-out;
+}
+
+.ftco-section .form-control1:hover,.ftco-section .form-control1:focus {
+    background: transparent;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+.btn-login{
+    background: #dab26c !important;
+    border: 1px
+ solid #dab26c !important;
+    color: #000 !important;
+    border-radius: 35px !important ;
+}
+.btn-login:hover{
+    background-color: #bbb9ba !important;
+}
+
+.ftco-section input::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+  }

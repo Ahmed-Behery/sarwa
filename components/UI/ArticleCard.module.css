@@ -1,0 +1,38 @@
+.article__card h2 {
+  color: #cda054;
+}
+.article__card span {
+  font-size: 32px;
+  color: #cda054;
+  padding-bottom: 30px;
+  letter-spacing: -1px;
+}
+.article__card p {
+  font-size: 18px;
+  color: black;
+  text-align: justify;
+}
+.article__card{
+  padding-top: 40px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+.article .article__card{
+  text-align: center;
+}
+.article .article__card img{
+  border-radius: 50% !important;
+}
+
+.read-or-hide{
+  cursor: pointer;
+  color: #cda055;
+  font-size: 16px;
+}
+.about__card:hover{
+  border: 1px solid #0d4974;
+  border-radius: 25px;
+}
+.about__card{
+  padding: 24px;
+  }

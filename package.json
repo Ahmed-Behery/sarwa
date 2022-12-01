@@ -1,0 +1,42 @@
+{
+  "name": "sarwa-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.0",
+    "classnames": "^2.3.1",
+    "fortawesome": "^0.0.1-security",
+    "next": "^12.3.1",
+    "next-i18next": "^12.0.0",
+    "next-translate": "^1.5.0",
+    "react": "^18.2.0",
+    "react-animated-css": "^1.2.1",
+    "react-animation-on-scroll": "^5.1.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^2.1.0",
+    "react-i18next": "^11.18.5",
+    "react-multi-carousel": "^2.8.2",
+    "react-redux": "^8.0.2",
+    "react-select": "^5.4.0",
+    "react-social-icons": "^5.14.0",
+    "react-use-file-upload": "^0.9.5",
+    "unop-react-dropdown": "^0.2.3"
+  },
+  "devDependencies": {
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5"
+  }
+}

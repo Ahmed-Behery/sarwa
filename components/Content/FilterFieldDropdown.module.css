@@ -1,0 +1,35 @@
+.filter__field {
+  margin: 40px auto;
+  border: 1px solid gray;
+  padding: 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 5px 48px rgba(0, 0, 0, 0.25);
+}
+.color-green .filter__field label {
+  color: #006958;
+}
+.filter__field label {
+  color: #01528a;
+}
+.color-green .featureL .filter__field label {
+  color: #006958;
+}
+.featureL .filter__field label {
+  color: #01528a;
+}
+/* .btn-glob button{
+  width: 30%;
+} */
+.branch_bg {
+  /* background-image: url(https://www.linkpicture.com/q/pattern-copy-1.jpg) !important; */
+  background-position: center !important;
+  background-size: cover !important;
+  box-shadow: none;
+  border: none;
+}
+.css-14el2xx-placeholder {
+  display: none;
+}
+.search__pr {
+  display: none !important;
+}

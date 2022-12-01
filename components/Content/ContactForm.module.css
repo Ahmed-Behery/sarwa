@@ -1,0 +1,87 @@
+.contact__form {
+  margin: 40px auto;
+  border: 1px solid gray;
+  padding: 20px;
+  background-color: #01528a;
+  box-shadow: 0 5px 48px rgba(0, 0, 0, 0.25);
+  color: #cda054;
+}
+
+.contact__form .form_control {
+  margin-bottom: 10px;
+}
+
+.contact__form .btn-primary {
+  background-color: #cda054;
+  border: none;
+}
+.contact__form .btn-primary:hover {
+  background-color: #0d4974;
+}
+.text_area{
+  border-radius: 10px;
+  width: 100%;
+  padding: 11px 12px 30px 15px;
+  border-color: white;
+    background-color: transparent;
+    color: #fff;
+
+}
+.text_area:focus-visible{
+  outline: none;
+}
+
+.contact__form ,.branches__Dropdown ,.filter__field{
+  border-radius: 20px;
+}
+.contact__form{
+  background-image: url(https://contact-clients-dev.s3.amazonaws.com/FormBackgroundInsurance.jpeg);
+  background-size: cover;
+}
+.contact__formL{
+  background-image: url('https://contact-clients-dev.s3.amazonaws.com/FormBackgroundLife.jpg') ;
+  background-size: cover;
+
+}
+.contact__form form input , .contact__form form select{
+  background-color: transparent;
+  border: 2px solid white;
+}
+.contact__form form label , .contact__form form label{ 
+  color: white;
+}
+.contact__form select{
+  /* color: #fff; */
+  width: 100%;
+  border-radius: .375rem;
+}
+.contact__form select option{
+  /* background-color: ; */
+  color:#01528a ;
+}
+.contact__form input {
+  border-radius: .375rem;
+  padding: 6px 12px;
+}
+.form_label{
+  color: #fff;
+  margin-bottom: 5px;
+}
+.opt_title {
+  font-size: 18px;
+  color: #656565;
+  font-weight: 700;
+}
+.btn_glob_contain { 
+  text-align: center;
+}
+.btn_glob_contain button {
+  padding: 7px 40px;
+}
+.contact_apply {
+  background-color: #cda054;
+  border: none;
+}
+.contact_apply:hover {
+  background-color: #a57a2f !important;
+}

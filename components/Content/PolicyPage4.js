@@ -1,0 +1,151 @@
+import style from "../UI/ArticleCard.module.css";
+import style1 from "./JoinUsForm.module.css";
+import Banner from "../UI/Banner";
+import style3 from "../Content/policyPage.module.css";
+import { useRouter } from 'next/router'
+import useTranslation from 'next-translate/useTranslation';
+import { useState } from 'react';
+import axios from 'axios';
+import Image from 'next/image'
+
+const PolicyPage6 = (props) => {
+  const {t,lang} = useTranslation("common");
+  const location = useRouter();
+
+  const imgUrl = 'https://contact-clients-dev.s3.amazonaws.com/ProdMedicalBannar.png';
+  const backgroundUrl = 'https://contact-clients-dev.s3.amazonaws.com/ProdMedicalBackground.png';
+  const url = 'https://website-api.sarwa.insurance/service-requests';
+  const [data, setData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    city: '',
+    description: t('md_title'),
+    source: location.pathname.includes('sarwa-Life')
+      ? 'Life'
+      : 'Insurance',
+  });
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    alert(t('messageF'));
+    axios
+      .post(url, {
+        name: data.firstName,
+        email: data.email,
+        phone: data.phone,
+        city: data.city,
+        description: data.description,
+        source: data.source,
+      })
+      .then((res) => {
+        
+      });
+  };
+  function handl(e) {
+    const newdata = { ...data };
+    newdata[e.target.id] = e.target.value;
+    setData(newdata);
+    
+  }
+  return (
+    <div>
+      <div>
+        <Banner imgUrl={imgUrl} />
+      </div>
+      <div>
+        <div dir={t('dir')} className="container">
+          <div className="row ">
+            <div className={style.article__card +" col-lg-12 " +style3.policy_title_i}>
+              <span className="mb-4 pb-2">{t('md_title')}</span>
+              <p className={style3.content+" pt-4"}> {t('md_content')}  </p>
+              <p>{t('md__sup')}</p>
+              <p className={style3.font_blue}>{t('md_title1')}</p>
+              <p>{t('md_content1')}</p>
+              <p className={style3.font_blue}>{t('md_title2')}</p>
+              <p>{t('md_content2')}</p>
+              <p className={style3.font_blue}>{t('md_title3')}</p>
+              <p>{t('md_content3')}</p>
+              <p>
+                <span className={style3.font_blue +" "+ style3.glo}>{t('globeMed1')}:</span>{' '}
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href={
+                    lang == 'ar'
+                      ? 'https://www.globemedegypt.com/ar'
+                      : 'https://www.globemedegypt.com/'
+                  }
+                >
+                  <picture>
+                    <source srcSet="https://contact-clients-dev.s3.amazonaws.com/GlobeMed.jpg" type="image/webp"/>
+                    <img alt="" width="150" src="https://contact-clients-dev.s3.amazonaws.com/GlobeMed.jpg" />
+                  </picture>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="row bg">
+          <Banner imgUrl={backgroundUrl} />
+          <div className={"col-lg-6 "+style3.policyForm}>
+            <div className={style1.join__form +" my-5"} id={style1.join}>
+              <h3 className="text-center text-white ">{t('md_request')}</h3>
+              <form onSubmit={(e) => handleSubmit(e)} className="mt-4">
+                <div className="col-md-12 mb-3">
+                  <input
+                    type="text"
+                    className={t('text-align') + ' form-control '}
+                    placeholder={t('namePlace1')}
+                    required=""
+                    id="firstName"
+                    onChange={(e) => handl(e)}
+                  />
+                </div>
+
+                <div className="col-md-12 mb-3">
+                  <input
+                    type="email"
+                    placeholder={t('mailPlace')}
+                    className={t('text-align') + ' form-control '}
+                    required=""
+                    id="email"
+                    onChange={(e) => handl(e)}
+                  />
+                </div>
+                <div className="col-md-12 mb-3">
+                  <input
+                    placeholder={t('phonePlace')}
+                    type="text"
+                    className={t('text-align') + ' form-control '}
+                    required=""
+                    id="phone"
+                    onChange={(e) => handl(e)}
+                  />
+                </div>
+                <div className="col-md-12 mb-3">
+                  <input
+                    type="text"
+                    placeholder={t('city')}
+                    className={t('text-align') + ' form-control '}
+                    required=""
+                    id="city"
+                    onChange={(e) => handl(e)}
+                  />
+                </div>
+
+                <div className="btn-glob-contain ">
+                  <button className="btn btn-primary w-100 " type="submit">
+                    {t('applyBtn')}
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default PolicyPage6;

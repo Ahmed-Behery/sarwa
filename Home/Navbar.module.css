@@ -1,0 +1,57 @@
+.home__navbar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.home__navbar .navbar {
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+}
+/* .home__navbar .navbar-logo {
+  padding-left: 45px;
+  z-index: 9999;
+} */
+.home__navbar .en__btn , .home__navbar .ar__btn{
+  background-color: transparent;
+  color: white;
+  /* padding-bottom: 6px !important; */
+  padding: 0px 20px;
+  border-radius: 10em;
+  border: 1px solid white;
+}
+.home__navbar .en__btn:hover ,.home__navbar .ar__btn:hover {
+  background-color: #c49a4b;
+  border: 1px solid #c49a4b;
+}
+.home__navbar .ar__btn{
+  padding: 0px 20px 5px !important;
+}
+
+/* .btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: none !important;
+} */
+
+/* .btn-check:focus+.btn-primary, .btn-primary:focus {
+ 
+  box-shadow: none !important;
+} */
+/* .logo{
+  width: 24%;
+} */
+
+/* .lang li a{
+  font-size: 14px ;
+} */
+
+/* .MuiTabs-flexContainer {
+  text-align: center;
+   display: block; 
+} */

@@ -1,0 +1,43 @@
+.card__circleImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__circleImg .name {
+  font-size: 18px;
+}
+
+.card__circleImg .position {
+  font-size: 18px;
+  color: #cda054;
+}
+
+
+@media  (max-width:1441px) {
+  .card__circleImg .position {
+    font-size: 17px;
+    color: #cda054;
+}
+.article__card p {
+  font-size: 17px;}
+}
+
+.img_t{
+  width: 244px;
+  height: 244px;
+}
+.card__circleImg a{
+  text-decoration: none !important;
+}
+.rounded_circle{
+  outline: solid 2px #cda054;
+  transition: outline 0.4s linear;
+  margin: 0.5em; /* Increased margin since the outline expands outside the element */
+}
+
+.rounded_circle:hover { outline-width: 5px; }
+/* h1,h2,h3,h4{
+  font-style: italic !important;
+} */

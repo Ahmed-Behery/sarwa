@@ -1,0 +1,107 @@
+.policy_title_i{
+    padding: 50px 0px 50px 0px;
+  
+}
+
+.policyForm{
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.policyForm #join {
+    position: relative;
+    bottom: 60px;
+    
+}
+.supTitle{
+    color: #C89F53 !important;
+}
+.sec_title{
+    color: #1B538A !important;
+    text-align: right;
+    font-weight: 700;
+}
+.font_blue{
+    color: #1B538A !important;
+    font-weight: 600;
+}
+.ulTitle{
+    color: #1B538A !important;
+    text-align: right;  
+}
+.ulDetails{
+    /* text-align: right; */
+    
+}
+.content{
+    font-size: 16px !important;
+}
+.text-left{
+    text-align: left;
+}
+#reqP .join__form {
+    width: 35% !important;
+    margin: 0 auto !important;
+}
+.form_select{
+color: gray;
+}
+.MuiTabs_scroller{
+    overflow: hidden;
+    padding-top: 34px;
+    font-family: 'Cairo';
+}
+.MuiTabs-scroller button span{
+    font-size: 22px;
+}
+.PrivateTabIndicator-colorSecondary-3 {
+    background-color: #006958 !important; 
+    height: 5px !important;
+}
+.tabs .MuiButtonBase-root{
+    border-bottom: 5px solid #cda054;
+}
+.tabi .PrivateTabIndicator-colorSecondary-3 {
+    background-color: #01528a !important;
+    height: 5px !important;
+}
+span.tabsl  .PrivateTabIndicator-colorSecondary-3{
+    background-color: #006958 !important;
+    height: 5px !important;
+}
+.tabi .jss1 ,.tabi .jss1 {
+    width: 100%;
+    bottom: 0;
+    height: 5px !important;
+    position: absolute;
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.tabi .MuiTabs-indicator {
+    background-color: #01528a !important;
+    height: 5px !important;
+}
+.tabsl .MuiTabs-indicator {
+    background-color: #006958 !important;
+    height: 5px !important;
+}
+#reqP .join__form {
+    width: 35%;
+    margin: 0 auto !important;
+}
+@media (max-width:600px) {
+    #reqP .join__form {
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+}
+.jss1 ,.jss2 ,.jss3 ,.js4 .jss5 , .jss7 {
+    height: 5px !important;
+}
+.glo {
+    font-size: 18px !important;
+    font-weight: bold;
+    color: black !important;
+  }
+  
+

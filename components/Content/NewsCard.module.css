@@ -1,0 +1,35 @@
+.news_title{
+    font-size: 22px;
+    color: #cda054;
+}
+.new_bt{
+    color: #cda054 !important;
+    border: 2px solid #cda054;
+    border-radius: 10px;
+    padding: 0 15px
+
+}
+.new_bt:hover{
+    color: white !important;
+    background-color: #cda054;
+}
+.card_t{
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.7;
+}
+.p_new{
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+}
+@media (max-width:767px) {
+    .p_new {
+        padding-left: 0px!important;
+        padding-right: 0px !important;
+    }
+}
+.card_title {
+    margin-bottom: 0.5rem;
+    font-size: 30px;
+    color: #d1a761;
+  }

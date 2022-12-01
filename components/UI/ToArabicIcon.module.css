@@ -1,0 +1,45 @@
+.icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+.icon span{
+  font-weight: 300;
+  position: relative;
+  bottom: 3.2px;
+  color: white;
+}
+.icon:hover{
+  color: #cda054;
+  border: 2px solid #cda054;
+  cursor: pointer;
+}
+.ar_ico{
+  font-weight: bold !important;
+}
+.btn_ar {
+  
+  border: 1px solid #fff;
+  background: transparent;
+  color: white;
+  padding: 4px 10px 7px 10px;
+  border-radius: 21px;
+
+}
+.btn_en{
+  
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: white;
+
+}
+.d_block{
+  display: block !important;
+}

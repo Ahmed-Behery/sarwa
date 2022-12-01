@@ -1,0 +1,40 @@
+.feature {
+  width: 100%;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+.feature div {
+  width: 150px;
+  text-align: center;
+  color: #0b4c85;
+}
+
+.feature p {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.service_title {
+  width: 100%;
+  font-size: 36px;
+  letter-spacing: -1px;
+  text-align: center;
+  padding-bottom: 30px;
+  color: #bc8f59;
+}
+.service_title a {
+  color: #bc8f59 !important ;
+}
+.featureL div {
+  width: 150px;
+  text-align: center;
+  color: #006958;
+}
+.pro__link__contain a {
+  text-decoration: none;
+  color: rgb(95, 94, 94);
+}
+.pro__link__contain a:hover {
+  text-decoration: none;
+  color: #cda054;
+}

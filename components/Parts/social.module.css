@@ -1,0 +1,99 @@
+
+.social_container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: #edf0f2;
+  padding: 5px 0px;
+  margin-top: 70px;
+}
+
+.social_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.social_icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.2em;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social_icons li a {
+  text-align: center;
+  border-radius: 50%;
+  padding: 25px;
+  text-decoration: none;
+  color:white;
+  background: linear-gradient(45deg, #00b5f5, #002a8f);
+  transition: all 265ms ease-out;
+  cursor: pointer;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  position: relative
+}
+.social_icons_1 a {
+  background: linear-gradient(45deg, #68d0bb, #006450) !important;
+}
+.social_icons a:hover, .social_icons_1 a:hover {
+  transition: all 5ms ease-in;
+  background: transparent !important;
+}
+
+.social_icons i {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 20px;
+  transition: all 5ms ease-out;
+  width: 22px;
+}
+
+.social_icons a:hover i {
+  transform: translate(-50%,-50%) scale(1.5);
+  -ms-transform: translate(-50%,-50%) scale(1.5);
+  -webkit-transform: translate(-50%,-50%) scale(1.5);
+  transition: all 265ms ease-in;
+}
+
+.social_icons li:nth-child(1) a:hover i {
+  color: #0077b5;
+}
+
+.social_icons li:nth-child(2) a:hover i {
+  color: #1877f2;
+}
+
+.social_icons li:nth-child(3) a:hover i {
+  color: #1da1f2;
+}
+
+.social_icons li:nth-child(4) a:hover i {
+  color: #5851db;
+}
+
+/* .lang .UnopdropDown_EMFQP button {
+  font-size: 16px !important;
+} */
+
+@media (max-width: 1441px) {
+  .social_icons i {
+    color: #fff;
+    font-size: 18px;
+  }
+  .social_icons a {
+    width: 35px;
+    height: 35px;
+    left: -3px !important;
+  }
+}

@@ -1,0 +1,125 @@
+.contact__layout h2 {
+  color: #cda054;
+  font-size: 28px;
+}
+
+.contact__layout {
+  padding-top: 30px;
+  padding-left: 130px !important;
+  padding-right: 130px !important;
+}
+.contact-apply:hover {
+  background-color: #a57a2f !important;
+}
+.contact__layout img {
+  border-radius: 20px;
+}
+.hotline img {
+  width: 100%;
+  transform: translateY(120%);
+}
+.hot_contain img {
+  width: 200px !important;
+  position: relative;
+  top: 18.5px;
+  margin-left: 100px;
+  display: none;
+}
+.contact__layout form select {
+  color: white !important;
+}
+.img_right1{
+  display: none !important;
+}
+@media (max-width: 767px) {
+  .section--header:before {
+    content: "";
+    position: absolute;
+    height: 100% !important;
+    /* top: 48px; */
+    right: 0;
+    /* bottom: 0; */
+    left: 0;
+    background: rgba(0,0,0,.4);
+    z-index: 9;
+}
+.section--header .content h1 {
+ 
+  text-align: center !important;
+}
+  .img_right , .img_left{
+    display: none !important;
+  }
+  .img_right1{
+    display: block !important;
+  }
+  .banner_img{
+    height: 170px !important;
+  }
+  /* h1,h2,h3,h4,h5,p,.about__card p, span ,.site-title ,.card-body ,.card-body a{
+    text-align: center !important;
+  } */
+  .card_body a{
+    float: none !important;
+  }
+  .contact__layout {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .FRA {
+    position: relative;
+  }
+  .slider__layout .shapes .circle h4 {
+    color: #fff;
+    font-weight: bold;
+    line-height: 100%;
+    margin-bottom: 8px;
+    font-size: 20px !important;
+    line-height: 1.7;
+  }
+  .hot_contain img {
+    width: 200px !important;
+    position: relative;
+    top: 18.5px;
+    margin-left: 0px;
+  }
+}
+.contact__formL {
+  margin: 0 !important;
+}
+.opt_title {
+  font-size: 18px;
+  color: #656565;
+  font-weight: 700;
+}
+.contact__layout select option {
+  text-transform: lowercase !important;
+}
+.select {
+  text-transform: lowercase;
+}
+.contact__formL {
+  position: relative;
+  /* z-index: 9999999999; */
+}
+.slider__layout .shapes .circle h4 {
+  color: #fff;
+  font-weight: bold;
+  line-height: 100%;
+  margin-bottom: 8px;
+  font-size: 27px;
+  line-height: 1.7;
+}
+.branchTit {
+  text-align: center !important;
+  font-size: 32px;
+  width: 100%;
+  color: #cc9f54;
+  letter-spacing: -1px;
+}
+.contact__layout select {
+  text-transform: capitalize !important;
+}
+.contact__layout select option {
+  text-transform: capitalize !important;
+}

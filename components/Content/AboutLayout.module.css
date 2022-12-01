@@ -1,0 +1,74 @@
+.about__layout .article {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(230, 230, 230, 1) 100%
+  );
+}
+
+.rounded_start {
+  width: 100%;
+}
+
+.img_h {
+  height: 100% !important;
+}
+
+.new_bt{
+  float: right;
+  border: none;
+  background: transparent;
+  border: 2px solid #cda055;
+  border-radius: 20px;
+  padding: 4px 20px;
+  font-size: 15px;
+  margin-top: 26px;
+}
+.new_bt:hover{
+  background-color: #cda055 !important;
+  color: white;
+}
+
+.article{
+  /* background-image: url(https://www.linkpicture.com/q/pattern-copy-1.jpg) !important; */
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+
+.bg_green{
+  background-color: green;
+}
+@media (-width:767px) {
+  
+  .nav__tabs {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.card__circleImg img{
+  
+    height: 251px;
+
+}
+.nav__tabs {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.banner_img{
+  height: 150px;
+}
+}
+.d_block{
+  display: block;
+}
+
+@media (max-width:1440px) and (min-width:992px) {
+  .social_icons a:before {
+    width: 35px;
+    height: 35px;
+    left: -3px !important;
+    top: 3px;
+}
+}

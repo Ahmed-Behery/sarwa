@@ -1,0 +1,146 @@
+.slider__layout {
+  position: relative;
+  display: flex;
+  height: 600px;
+  overflow: hidden;
+}
+
+.slider__layout .image {
+  background-image: url(https://contact-clients-dev.s3.amazonaws.com/SarwaInsSlider.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.slider__layout .image {
+  position: relative;
+  z-index: 51;
+  width: 100%;
+  min-width: 350px;
+  height: 760px;
+}
+
+.slider__layout .shapes {
+  /* width: 50%; */
+  background-color: rgb(192, 225, 253);
+  display: flex;
+  align-items: center;
+}
+
+/* .slider__layout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #cda054;
+  z-index: 200;
+} */
+/* .main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #cda054;
+  z-index: 200;
+} */
+
+.slider__layout .shapes .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  width: 34vw;
+  height: 34vw;
+  min-width: 373px;
+  min-height: 373px;
+  border-radius: 50%;
+  background-color: #01528a;
+  z-index: 100;
+}
+.slider__layout .shapes .circle .texts {
+  width: 64%;
+}
+.slider__layout h4{
+  color: #fff;
+  font-weight: bold;
+  line-height: 100%;
+  margin-bottom: 8px;
+  font-size: 30px;
+  line-height: 1.7;
+} 
+.slider__layout .texts span {
+  color: #cda054;
+  line-height: 1.5;
+}
+.slider__layout .texts p {
+  color: rgb(206, 200, 200);
+  font-size: 18px;
+}
+
+.circle_2 {
+  width: 36vw;
+  height: 33vw;
+  background-color: #cda054;
+  border-radius: 50%;
+  position: absolute;
+  top: 8%;
+  left: 44.5%;
+  z-index: 50;
+}
+
+@media (max-width: 520px) {
+  .slider__layout .image {
+    width: 70%;
+  }
+  .slider__layout .shapes .circle .texts {
+    position: relative;
+    right: 60px;
+  }
+}
+
+.slider__life .shapes .circle {
+  background-color: #006958;
+}
+
+
+.slider__layout .image_1 {
+  background-image: url(https://contact-clients-dev.s3.amazonaws.com/SarwaLifeSlider.jpg) !important;
+  background-size: cover;
+  /* height: 600px; */
+}
+.dnone {
+  display: none;
+}
+.dblock {
+  display: none;
+}
+.MuiTabs-flexContainer {
+  display: block !important;
+  text-align: center;
+}
+
+.suptitleq {
+  padding-top: 5px;
+}
+@media (max-width: 768px){
+  .slider__layout .shapes .circle {
+    left: 3% !important;
+  }
+  .slider__layout .shapes .circle .texts {
+    width: 50% !important;
+  }
+  .slider__layout .image {
+    width: 100% !important;
+  }
+  .slider__layout .shapes .circle .texts {
+    position: relative;
+    right: 0px !important;
+  }
+  .slider__layout .shapes .circle h4 {
+    font-size: 20px !important;
+  }
+}
+

@@ -1,0 +1,82 @@
+.policy__card {
+  background-color: white;
+  /* padding-top: 30px; */
+ 
+}
+.policy__card:hover{
+  box-shadow: none !important; 
+}
+
+.policy__card h2 {
+  color: #cda054;
+  padding-top: 15px;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.policy__card .card_text {
+  /* color: #fff; */
+  font-size: 18px;
+}
+
+.card_body .read_btn{
+  outline: none;
+  border: none;
+  padding: 5px 15px;
+  float: left;
+  margin-top: 5px;
+  margin-right: 0px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  padding-bottom: 7.4px;
+  background-color: #eee;
+  text-decoration: none;
+  color: black;
+}
+.read_btn:hover{
+  background-color:#cda054 ;
+  color: white;
+}
+.suptitleq{
+  letter-spacing: -1px;
+  font-size: 18px;
+  display: block;
+    /* color: white; */
+    /* text-transform: capitalize !important; */
+    font-weight: 600;
+}
+/* .suptitleq:first-letter,
+.suptitleq:first-line {
+  text-transform: capitalize;
+} */
+.card_info{
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+
+}
+.img_h img{
+max-height: 338px;
+}
+#reqP{
+ padding-top: 120px;
+}
+/* .pro-img{
+
+  height: 280px !important;
+}
+.policy__body{
+  height: 280px !important;
+} */
+
+
+.card_title {
+  margin-bottom: 0.5rem;
+  font-size: 30px;
+  color: #d1a761;
+}
+
+@media (max-width: 768px) {
+  .card_body {
+    text-align: center !important;
+  }
+}
