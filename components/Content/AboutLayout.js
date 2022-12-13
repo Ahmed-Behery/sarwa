@@ -11,16 +11,21 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 import useTranslation from "next-translate/useTranslation";
 import Value from "../UI/value";
+import { useSelector, useDispatch } from "react-redux";
 
 const AboutLayout = () => {
+  const tab = useSelector((state) => state.tab.tab);
+
   const { t, lang } = useTranslation("common");
   const location = useRouter();
 
   const vision_Text = t(
-    location.pathname.includes("/sarwa-Life") ? "visionTextL" : "visionText"
+    tab === "sarwa-life" ? "visionTextL" : "visionText"
+    // location.pathname.includes("/sarwa-Life") ? "visionTextL" : "visionText"
   );
   const mission_text = t(
-    location.pathname.includes("/sarwa-Life") ? "missionTextL" : "missionText"
+    tab === "sarwa-life" ? "missionTextL" : "missionText"
+    // location.pathname.includes("/sarwa-Life") ? "missionTextL" : "missionText"
   );
   const imgUrl =
     "https://contact-clients-dev.s3.amazonaws.com/AboutUsInsBannar.jpg";
@@ -34,17 +39,12 @@ const AboutLayout = () => {
   return (
     <div dir={t("dir")} className={style.about__layout}>
       <Banner
-        imgUrl={location.pathname.includes("/sarwa-Life") ? imgUrlL : imgUrl}
+        imgUrl={tab === "sarwa-life" ? imgUrlL : imgUrl}
         height={"250px"}
       />
       <div className="container">
         <About>
-          {t(
-            location.pathname.includes("sarwa-Life")
-              ? "aboutDescL1"
-              : "aboutDesc1"
-          )}{" "}
-          <br />
+          {t(tab === "sarwa-life" ? "aboutDescL1" : "aboutDesc1")} <br />
         </About>
       </div>
       <div className={style.article}>
@@ -55,7 +55,7 @@ const AboutLayout = () => {
                 title={t("visionTitle")}
                 text={vision_Text}
                 imgUrl={
-                  location.pathname.includes("/sarwa-Life")
+                  tab === "sarwa-life"
                     ? "https://contact-clients-dev.s3.amazonaws.com/LiveVissionIcon.png"
                     : "https://contact-clients-dev.s3.amazonaws.com/InsuranceVissionIcon.png"
                 }
@@ -68,7 +68,7 @@ const AboutLayout = () => {
                 title={t("missionTitle")}
                 text={mission_text}
                 imgUrl={
-                  location.pathname.includes("/sarwa-Life")
+                  tab === "sarwa-life"
                     ? "https://contact-clients-dev.s3.amazonaws.com/LiveMissionIcon.png"
                     : "https://contact-clients-dev.s3.amazonaws.com/InsuranceMissionIcon.png"
                 }
@@ -80,7 +80,7 @@ const AboutLayout = () => {
               <Value
                 title={t("valueTitle")}
                 imgUrl={
-                  location.pathname.includes("/sarwa-Life")
+                  tab === "sarwa-life"
                     ? "https://contact-clients-dev.s3.amazonaws.com/LiveValueIcon.png"
                     : "https://contact-clients-dev.s3.amazonaws.com/InsuranceValueIcon.png"
                 }
@@ -92,19 +92,9 @@ const AboutLayout = () => {
       </div>
       <Tabs
         className={style.team}
-        tabOneTitle={
-          t("ourTeam")
-          // location.pathname.includes("/sarwa-insurance")
-          //   ? t("ourTeam")
-          //   : t("ourDirectors")
-        }
+        tabOneTitle={t("ourTeam")}
         tabOneContent={<OurTeam />}
-        tabTwoTitle={
-          t("ourDirectors")
-          // location.pathname.includes("/sarwa-insurance")
-          //   ? t("ourDirectors")
-          //   : t("ourTeam")
-        }
+        tabTwoTitle={t("ourDirectors")}
         tabTwoContent={<OurDirectors />}
       />
     </div>

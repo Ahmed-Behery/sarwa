@@ -1,21 +1,12 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   reactStrictMode: true,
-//   swcMinify: true,
-// }
+const nextTranslate = require("next-translate");
+const withPlugins = require("next-compose-plugins");
 
-// module.exports = nextConfig
-
-const nextTranslate = require('next-translate');
-
-module.exports = nextTranslate({
+const localization = nextTranslate({
   reactStrictMode: true,
 });
 
+const images = {
+  domains: ["contact-clients-dev.s3.amazonaws.com"],
+};
 
-// module.exports = {
-//   images: {
-//     domains: ['linkpicture.com'],
-//   },
-// }
-
+module.exports = withPlugins([{ images }, localization]);

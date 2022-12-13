@@ -12,6 +12,8 @@ import Layout2 from "../components/Layout/Layout2";
 import ScrollToTop from "../components/Layout/ScrollToTop";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import store from "../components/store/store";
+import { Provider } from "react-redux";
 
 const MyApp = ({ Component, pageProps }) => {
   useEffect(() => {
@@ -20,32 +22,34 @@ const MyApp = ({ Component, pageProps }) => {
   const location = useRouter();
 
   return (
-    <Fragment>
-      <Head>
-        <link
-          rel="icon"
-          href={
-            location.pathname.includes("/sarwa-Life")
-              ? "Sarwa-life-01.png"
-              : location.pathname.includes("/sarwa-insurance")
-              ? "/Sarwa-Insurance-Bilingual-logo.png"
-              : "/Sarwa-Insurance-Bilingual-logo (1).png"
-          }
-        />
-      </Head>
-      <ScrollToTop>
-        {!location.pathname.includes("sarwa-insurance") &&
-        !location.pathname.includes("sarwa-Life") ? (
-          <Layout2>
-            <Component {...pageProps} />
-          </Layout2>
-        ) : (
-          <Layout1>
-            <Component {...pageProps} />
-          </Layout1>
-        )}
-      </ScrollToTop>
-    </Fragment>
+    <Provider store={store}>
+      <Fragment>
+        <Head>
+          <link
+            rel="icon"
+            href={
+              location.pathname.includes("/sarwa-Life")
+                ? "Sarwa-life-01.png"
+                : location.pathname.includes("/sarwa-insurance")
+                ? "/Sarwa-Insurance-Bilingual-logo.png"
+                : "/Sarwa-Insurance-Bilingual-logo (1).png"
+            }
+          />
+        </Head>
+        <ScrollToTop>
+          {!location.pathname.includes("sarwa-insurance") &&
+          !location.pathname.includes("sarwa-Life") ? (
+            <Layout2>
+              <Component {...pageProps} />
+            </Layout2>
+          ) : (
+            <Layout1>
+              <Component {...pageProps} />
+            </Layout1>
+          )}
+        </ScrollToTop>
+      </Fragment>
+    </Provider>
   );
 };
 
