@@ -1,32 +1,56 @@
-import style from "./Slider.module.css";
-import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
-import useTranslation from 'next-translate/useTranslation';
+import React from "react";
+import { useRouter } from "next/router";
 
+import useTranslation from "next-translate/useTranslation";
+import style from "./Slider.module.css";
+
+import Carousel from "react-bootstrap/Carousel";
+
+const sliderImg =
+  "https://image-solution-no-scale.s3.us-east-2.amazonaws.com/upload/en.png";
+const sliderImgAr =
+  "https://image-solution-no-scale.s3.us-east-2.amazonaws.com/upload/ar.jpg";
+const sliderImg2 =
+  "https://image-solution-no-scale.s3.us-east-2.amazonaws.com/upload/car.png";
 
 const Slider = () => {
-  const {t,lang} = useTranslation("common");
-  
+  // const [t, i18n] = useTranslation();
+  const location = useRouter();
+  const { t, lang } = useTranslation("common");
+
+  React.useEffect(() => {
+    if (location.pathname.includes("sarwa-Life")) {
+      setClassIMG("image-1");
+    } else {
+    }
+  }, [location]);
+
   return (
-    <section className={style.slider__layout}>
-      <div className={style.image}></div>
+    <Carousel
+      className={`${style.slider__layout} ${style.slider__layout__insurance}`}
+    >
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={lang == "en" ? sliderImg : sliderImgAr}
+          alt="Fastest Growing"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
         <div className={style.shapes}>
+          <img className="d-block w-100" src={sliderImg2} alt="" />
+
           <div className={style.circle}>
-            <div className={style.texts} style={lang==="ar" ?
-            {"textAlign":"right"} : {"textAlign":"left"}}>
-              <h4>
-                {t("sliderText1")}  
-                <span>{t("sliderText2")}</span> 
+            <div className={style.texts}>
+              <h4 className={t("text-align")}>
+                {t("sliderText1")} <span>{t("sliderText2")} </span>
               </h4>
-              <p className={t("text-align")}>
-                {t("sliderDesc")}  
-              </p>
+              <p className={t("text-align")}>{t("sliderDesc")}</p>
             </div>
-            </div>
-          <div className={style.circle_2}>
+          </div>
         </div>
-      </div>
-    </section>
+      </Carousel.Item>
+    </Carousel>
   );
 };
 

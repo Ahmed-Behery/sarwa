@@ -5,8 +5,8 @@ import { useRouter } from "next/router";
 import { Navbar, Nav } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import useTranslation from "next-translate/useTranslation";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
 const Menue = () => {
   const [url, seturl] = useState("/sarwa-insurance");
@@ -48,30 +48,27 @@ const Menue = () => {
         id="nav"
         expand="lg"
       >
-        <div className="container">
+        <div
+          style={{
+            width: "90%",
+            display: "flex",
+            // justifyContent: "space-around",
+          }}
+        >
           <Navbar.Brand className={style.logo}>
             <Link href={url}>
               <a>
-                <picture>
-                  <source
-                    srcSet={
-                      location.pathname.includes("sarwa-Life")
-                        ? "https://contact-clients-dev.s3.amazonaws.com/NavbarSarwaLifeLogo.webp"
-                        : "https://contact-clients-dev.s3.amazonaws.com/NavbarSarwaInsLogo.webp"
-                    }
-                    type="image/webp"
-                  />
-                  <img
-                    alt=""
-                    src={
-                      location.pathname.includes("sarwa-Life")
-                        ? "https://contact-clients-dev.s3.amazonaws.com/NavbarSarwaLifeLogo.webp"
-                        : "https://contact-clients-dev.s3.amazonaws.com/NavbarSarwaInsLogo.webp"
-                    }
-                    width="280"
-                    height="auto"
-                  />
-                </picture>
+                <Image
+                  width={280}
+                  height={110}
+                  className="banner-img"
+                  alt="img"
+                  src={
+                    location.pathname.includes("sarwa-Life")
+                      ? "https://contact-clients-dev.s3.amazonaws.com/NavbarSarwaLifeLogo.webp"
+                      : "https://contact-clients-dev.s3.amazonaws.com/NavbarSarwaInsLogo.webp"
+                  }
+                />
               </a>
             </Link>
           </Navbar.Brand>
@@ -164,7 +161,17 @@ const Menue = () => {
                 )}
 
                 {location.pathname.includes("sarwa-Life") ? (
-                  ""
+                  <li className={style.nav_item}>
+                    <Link href="/sarwa-Life/media">
+                      <a
+                        className={
+                          location.pathname.includes("media") ? style.acc : ""
+                        }
+                      >
+                        {t("media")}
+                      </a>
+                    </Link>
+                  </li>
                 ) : (
                   <li className={style.nav_item}>
                     <Link href="/sarwa-insurance/media">

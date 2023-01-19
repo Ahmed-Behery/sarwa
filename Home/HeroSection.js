@@ -3,7 +3,6 @@ import style from './HeroSection.module.css';
 import "animate.css/animate.min.css";
 import useTranslation from 'next-translate/useTranslation';
 import Aos from 'aos';
-
 function HeroSection(props) {
   
   const {t,lang} = useTranslation("common");

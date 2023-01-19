@@ -5,8 +5,15 @@
   overflow: hidden;
 }
 
+.slider__layout__insurance {
+  position: relative;
+  display: flex;
+  height: 550px;
+  overflow: hidden;
+}
+
 .slider__layout .image {
-  background-image: url(https://contact-clients-dev.s3.amazonaws.com/SarwaInsSlider.jpg);
+  background-image: url("/updated-pics/SarwaLifeSlider.jpg");
   background-position: bottom;
   background-size: cover;
 }
@@ -63,14 +70,14 @@
 .slider__layout .shapes .circle .texts {
   width: 64%;
 }
-.slider__layout h4{
+.slider__layout h4 {
   color: #fff;
   font-weight: bold;
   line-height: 100%;
   margin-bottom: 8px;
   font-size: 30px;
   line-height: 1.7;
-} 
+}
 .slider__layout .texts span {
   color: #cda054;
   line-height: 1.5;
@@ -105,9 +112,8 @@
   background-color: #006958;
 }
 
-
 .slider__layout .image_1 {
-  background-image: url(https://contact-clients-dev.s3.amazonaws.com/SarwaLifeSlider.jpg) !important;
+  background-image: url("/updated-pics/SarwaInsSlider.jpg") !important;
   background-size: cover;
   /* height: 600px; */
 }
@@ -125,7 +131,7 @@
 .suptitleq {
   padding-top: 5px;
 }
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .slider__layout .shapes .circle {
     left: 3% !important;
   }
@@ -143,4 +149,3 @@
     font-size: 20px !important;
   }
 }
-

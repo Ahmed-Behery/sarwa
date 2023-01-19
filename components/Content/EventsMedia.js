@@ -1,62 +1,46 @@
 import GalleryImg from "../UI/GalleryImg";
 import style from "./NewsCard.module.css";
+import DB from "../../DB-Backup.json";
+import { useRouter } from "next/router";
 
+const sarwaInsurance = DB[0].data.sarwa_insurance.media_page.media_events;
+const sarwaLife = DB[0].data.sarwa_life.media_page.media_events;
 const EventsMedia = () => {
-  // const images = [
-  //   {
-  //     title: "Gift Habeshaw",
-  //     src: "https://www.imgacademy.com/sites/default/files/2009-stadium-about.jpg",
-  //     description: "Person wearing shoes",
-  //   },
-  //   {
-  //     title: "Gift Habeshaw",
-  //     src: "https://media-cdn.tripadvisor.com/media/photo-s/0c/bb/a3/97/predator-ride-in-the.jpg",
-  //     description: "Person wearing shoes",
-  //   },
-  //   {
-  //     title: "Gift Habeshaw",
-  //     src: "https://media-cdn.tripadvisor.com/media/photo-s/0c/bb/a3/97/predator-ride-in-the.jpg",
-  //     description: "Person wearing shoes",
-  //   },
-  //   {
-  //     title: "Gift Habeshaw",
-  //     src: "https://www.imgacademy.com/sites/default/files/2009-stadium-about.jpg",
-  //     description: "Person wearing shoes",
-  //   },
-  //   {
-  //     title: "Gift Habeshaw",
-  //     src: "https://media-cdn.tripadvisor.com/media/photo-s/0c/bb/a3/97/predator-ride-in-the.jpg",
-  //     description: "Person wearing shoes",
-  //   },
-  //   {
-  //     title: "Gift Habeshaw",
-  //     src: "https://media-cdn.tripadvisor.com/media/photo-s/0c/bb/a3/97/predator-ride-in-the.jpg",
-  //     description: "Person wearing shoes",
-  //   },
-  //   {
-  //     title: "Gift Habeshaw",
-  //     src: "https://www.imgacademy.com/sites/default/files/2009-stadium-about.jpg",
-  //     description: "Person wearing shoes",
-  //   },
-  //   {
-  //     title: "Gift Habeshaw",
-  //     src: "https://media-cdn.tripadvisor.com/media/photo-s/0c/bb/a3/97/predator-ride-in-the.jpg",
-  //     description: "Person wearing shoes",
-  //   },
-  //   {
-  //     title: "Gift Habeshaw",
-  //     src: "https://media-cdn.tripadvisor.com/media/photo-s/0c/bb/a3/97/predator-ride-in-the.jpg",
-  //     description: "Person wearing shoes",
-  //   },
-  // ];
-  return (
+  const location = useRouter();
+
+  return location.pathname.includes("sarwa-Life") ? (
+    // sarwa-life ---------------------------------
     <div className={"container " + style.p_new}>
-      <div className="d-flex justify-content-center align-items-center flex-wrap">
-        {/*{images.map((image, index) => (
-          <GalleryImg key={index} imgUrl={image.src} title={image.title} />
-        ))} */}
-        <div>Events will add soon</div>
-      </div>
+      {sarwaLife &&
+        sarwaLife.map((item) => (
+          <NewsCard
+            pLink={item.pLink}
+            imgUrl={lang == "en" ? item.imgUrl.en : item.imgUrl.ar}
+            date={item.date}
+            text={item.text}
+            title={lang == "en" ? item.title.en : item.title.ar}
+          />
+        ))}
+      {sarwaLife.length == 0 && (
+        <div style={{ textAlign: "center" }}>No news yet ...</div>
+      )}
+    </div>
+  ) : (
+    // sarwa-insurance ---------------------------------
+    <div className={"container " + style.p_new}>
+      {sarwaInsurance &&
+        sarwaInsurance.map((item) => (
+          <NewsCard
+            pLink={item.pLink}
+            imgUrl={lang == "en" ? item.imgUrl.en : item.imgUrl.ar}
+            date={item.date}
+            text={lang == "en" ? item.text.en : item.text.ar}
+            title={lang == "en" ? item.title.en : item.title.ar}
+          />
+        ))}
+      {sarwaInsurance.length == 0 && (
+        <div style={{ textAlign: "center" }}>No news yet ...</div>
+      )}
     </div>
   );
 };

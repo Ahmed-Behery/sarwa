@@ -3,6 +3,9 @@
   top: 0;
   z-index: 9999;
 }
+.menue .container {
+  width: 90%;
+}
 .nav_ {
   padding: 0 !important;
   background-color: #01528a;
@@ -219,7 +222,7 @@
   justify-content: center;
 } */
 #basic_navbar_nav {
-  justify-content: center;
+  justify-content: flex-end;
 }
 .navbar_collapse {
   flex-basis: 100%;

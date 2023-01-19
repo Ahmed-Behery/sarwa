@@ -7,7 +7,11 @@ import Tabs from "../UI/Tabs";
 import useTranslation from "next-translate/useTranslation";
 import { useRouter } from "next/router";
 import style from "../Content/JoinUsForm.module.css";
-
+import DB from "../../DB-Backup.json";
+const sarwaInsuranceBanner = DB[0].data.sarwa_insurance.products_page.banner;
+const sarwaInsuranceCards = DB[0].data.sarwa_insurance.products_page.cards;
+const sarwaLifeBanner = DB[0].data.sarwa_life.products_page.banner;
+const sarwaLifeCards = DB[0].data.sarwa_life.products_page.cards;
 const OurProductsLayout = () => {
   const [sarwaInsuranceData, setSarwaInsuranceData] = useState();
   const [sarwaLifeData, setSarwaLifeData] = useState();
@@ -51,19 +55,7 @@ const OurProductsLayout = () => {
 
   useEffect(() => {
     Aos.init();
-    fetch("http://localhost:3001/api")
-      .then((apiData) => apiData.json())
-      .then((apiData) => {
-        setSarwaInsuranceData(
-          apiData.result[0].data.sarwa_insurance.products_page
-        );
-        setSarwaLifeData(apiData.result[0].data.sarwa_life.products_page);
-      });
   }, []);
-
-  // useEffect(() => {
-  //   data && console.log(data.result[0].data.sarwa_insurance.products_page);
-  // }, [data]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -71,16 +63,13 @@ const OurProductsLayout = () => {
     alert(t("messageF"));
   };
 
-  if (!sarwaInsuranceData && !sarwaLifeData) {
-    return <p>Loading ...</p>;
-  }
   return (
     <>
       <Banner
         imgUrl={
           location.pathname.includes("/sarwa-insurance")
-            ? sarwaInsuranceData.banner
-            : sarwaLifeData.banner
+            ? sarwaInsuranceBanner
+            : sarwaLifeBanner
         }
         height={"250px"}
       />
@@ -92,7 +81,8 @@ const OurProductsLayout = () => {
           tabOneContent={
             <>
               {location.pathname.includes("/sarwa-insurance")
-                ? sarwaInsuranceData.cards.retail.map((item, index) => (
+                ? // sarwa-insurance ---------------------------------
+                  sarwaInsuranceCards.retail.map((item, index) => (
                     <PolicyCard2
                       imgUrl={item.imgUrl}
                       title={lang == "en" ? item.title.en : item.title.ar}
@@ -104,7 +94,8 @@ const OurProductsLayout = () => {
                       proLink={item.proLink}
                     />
                   ))
-                : sarwaLifeData.cards.retail.map((item, index) => (
+                : // sarwa-insurance ---------------------------------
+                  sarwaLifeCards.retail.map((item, index) => (
                     <PolicyCard2
                       imgUrl={item.imgUrl}
                       title={lang == "en" ? item.title.en : item.title.ar}
@@ -122,7 +113,7 @@ const OurProductsLayout = () => {
           tabTwoContent={
             <>
               {location.pathname.includes("/sarwa-insurance")
-                ? sarwaInsuranceData.cards.commercial.map((item, index) => (
+                ? sarwaInsuranceCards.commercial.map((item, index) => (
                     <PolicyCard2
                       imgUrl={item.imgUrl}
                       title={lang == "en" ? item.title.en : item.title.ar}
@@ -134,7 +125,7 @@ const OurProductsLayout = () => {
                       proLink={item.proLink}
                     />
                   ))
-                : sarwaLifeData.cards.commercial.map((item, index) => (
+                : sarwaLifeCards.commercial.map((item, index) => (
                     <PolicyCard2
                       imgUrl={item.imgUrl}
                       title={lang == "en" ? item.title.en : item.title.ar}
