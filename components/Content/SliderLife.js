@@ -8,7 +8,9 @@ const SliderLife = () => {
     <section className={style.slider__layout + " " + style.slider__life}>
       {/*<div className={style.image + " " + style.image_1}></div>*/}
       <div className={style.shapes + " w-100"}>
-        <img className="d-block w-100" src="/updated-pics/SarwaLifeSlider.jpg" alt="" />
+        <picture>
+          <img className="d-block w-100" src="/updated-pics/SarwaLifeSlider.jpg" alt="" />
+        </picture>
         <div className={style.circle}>
           <div
             className={style.texts}

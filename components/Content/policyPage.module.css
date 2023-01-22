@@ -1,8 +1,10 @@
 .policy_title_i{
     padding: 50px 0px 50px 0px;
-  
 }
-
+.policy_title_i h1 {
+    color: #C89F53;
+    font-size: 32px;
+}
 .policyForm{
     position: absolute;
     z-index: 999;

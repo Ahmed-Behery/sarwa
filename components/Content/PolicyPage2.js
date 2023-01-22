@@ -56,7 +56,7 @@ const PolicyPage2 = (props) => {
           <div dir={t("dir")} className="container">
             <div className="row ">
               <div className={style.article__card +" col-lg-12 " +style3.policy_title_i}>
-                <span>{t("ho_title")}</span>
+                <h1>{t("ho_title")}</h1>
                 <p className="pt-4">{t("ho_content")} </p>
                 <p className="">{t("ho_content1")} </p>
                 <p className={style3.font_blue +" py-4"}>{t("ho_content2")} </p>

@@ -30,15 +30,19 @@ const Slider = () => {
       className={`${style.slider__layout} ${style.slider__layout__insurance}`}
     >
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={lang == "en" ? sliderImg : sliderImgAr}
-          alt="Fastest Growing"
-        />
+        <picture>
+          <img
+            className="d-block w-100"
+            src={lang == "en" ? sliderImg : sliderImgAr}
+            alt="Fastest Growing"
+          />
+        </picture>
       </Carousel.Item>
       <Carousel.Item>
         <div className={style.shapes}>
-          <img className="d-block w-100" src={sliderImg2} alt="" />
+          <picture>
+            <img className="d-block w-100" src={sliderImg2} alt="" />
+          </picture>
 
           <div className={style.circle}>
             <div className={style.texts}>

@@ -18,7 +18,7 @@ const BoardOfDirectors = () => {
       <div className="row justify-content-center my-3 pb-4">
         {sarwaLife.map(({ name, position, imgUrl }, index) => {
           return (
-            <div className="col-lg-12 col-md-6">
+            <div className="col-lg-12 col-md-6" key={index}>
               <CardWithCircleImg
                 imgUrl={imgUrl}
                 name={lang == "en" ? name.en : name.ar}
@@ -35,7 +35,7 @@ const BoardOfDirectors = () => {
         {sarwaInsurance.map(({ name, position, imgUrl }, index) => {
           if (!index) {
             return (
-              <div className="col-lg-12 col-md-6">
+              <div className="col-lg-12 col-md-6" key={index}>
                 <CardWithCircleImg
                   imgUrl={imgUrl}
                   name={lang == "en" ? name.en : name.ar}

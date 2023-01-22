@@ -15,8 +15,8 @@ const OurTeam = () => {
     // sarwa-life ---------------------------------
     <div className="team">
       <div className="row justify-content-around my-3 pb-4">
-        {sarwaLife.map(({ name, position, imgUrl }) => (
-          <div className="col-lg-3 col-md-6">
+        {sarwaLife.map(({ name, position, imgUrl },index) => (
+          <div className="col-lg-3 col-md-6" key={index}>
             <CardWithCircleImg
               imgUrl={imgUrl}
               name={lang == "en" ? name.en : name.ar}
@@ -31,8 +31,8 @@ const OurTeam = () => {
     <>
       <div className="team">
         <div className="row justify-content-center my-3 pb-4">
-          {sarwaInsurance.map(({ name, position, imgUrl }) => (
-            <div className="col-lg-4 col-md-6">
+          {sarwaInsurance.map(({ name, position, imgUrl }, index) => (
+            <div className="col-lg-4 col-md-6" key={index}>
               <CardWithCircleImg
                 imgUrl={imgUrl}
                 name={lang == "en" ? name.en : name.ar}
