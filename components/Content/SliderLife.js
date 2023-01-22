@@ -6,8 +6,9 @@ const SliderLife = () => {
 
   return (
     <section className={style.slider__layout + " " + style.slider__life}>
-      <div className={style.image + " " + style.image_1}></div>
-      <div className={style.shapes}>
+      {/*<div className={style.image + " " + style.image_1}></div>*/}
+      <div className={style.shapes + " w-100"}>
+        <img className="d-block w-100" src="/updated-pics/SarwaLifeSlider.jpg" alt="" />
         <div className={style.circle}>
           <div
             className={style.texts}
@@ -15,13 +16,12 @@ const SliderLife = () => {
               lang === "ar" ? { textAlign: "right" } : { textAlign: "left" }
             }
           >
-            <h4>
+            <h1>
               {t("sliderLife1")} <span>{t("sliderLife2")}</span>
-            </h4>
+            </h1>
             <p className={t("text-align")}>{t("sliderLifeDesc")}</p>
           </div>
         </div>
-        <div className={style.circle_2}></div>
       </div>
     </section>
   );

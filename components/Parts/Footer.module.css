@@ -65,7 +65,15 @@
   margin-bottom: 10px;
   margin-right: 0px !important;
 }
+.footer .award {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
 
+.footer .award img {
+  max-width: 150px;
+}
 .FRA {
   position: absolute;
   margin-top: 18px;

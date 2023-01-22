@@ -29,7 +29,7 @@ const MyApp = ({ Component, pageProps }) => {
             rel="icon"
             href={
               location.pathname.includes("/sarwa-Life")
-                ? "Sarwa-life-01.png"
+                ? "/Sarwa-life-01.png"
                 : location.pathname.includes("/sarwa-insurance")
                 ? "/Sarwa-Insurance-Bilingual-logo.png"
                 : "/Sarwa-Insurance-Bilingual-logo (1).png"

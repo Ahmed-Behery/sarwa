@@ -92,6 +92,7 @@ const OurProductsLayout = () => {
                       text={lang == "en" ? item.text.en : item.text.ar}
                       imgRight={item.imgRight}
                       proLink={item.proLink}
+                      key={index}
                     />
                   ))
                 : // sarwa-insurance ---------------------------------
@@ -105,6 +106,7 @@ const OurProductsLayout = () => {
                       text={lang == "en" ? item.text.en : item.text.ar}
                       imgRight={item.imgRight}
                       proLink={item.proLink}
+                      key={index}
                     />
                   ))}
             </>

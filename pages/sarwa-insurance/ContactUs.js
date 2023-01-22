@@ -9,8 +9,10 @@ const ContactUsPage = () => {
   return (
     <Fragment>
       <Head>
-          <title>Sarwa Insurance | Contact Us</title>
+          <title>Sarwa Insurance | Branches | Contact Us</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <meta name="description" content="If you have any questions concerning Sarwa Insurance plans, we are here to help. Check here to find our branches and get in touch with us.
+" />
       </Head>
       <div
         className={

@@ -8,10 +8,10 @@ const ScrollToTop = (props) => {
   const dispatch = useDispatch();
   const tab = useSelector((state) => state.tab.tab);
 
-  location.pathname.includes("/sarwa-insurance")
-    ? dispatch(tabActions.update("sarwa-insurance"))
-    : dispatch(tabActions.update("sarwa-life"));
-  console.log(tab);
+  // location.pathname.includes("/sarwa-insurance")
+  //   ? dispatch(tabActions.update("sarwa-insurance"))
+  //   : dispatch(tabActions.update("sarwa-life"));
+  // console.log(tab);
 
   useLayoutEffect(() => {
     window.scrollTo(0, 0);

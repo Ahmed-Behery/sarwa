@@ -14,13 +14,14 @@ const NewsMedia = () => {
     // sarwa-life ---------------------------------
     <div className={"container " + style.p_new}>
       {sarwaLife &&
-        sarwaLife.map((item) => (
+        sarwaLife.map((item,index) => (
           <NewsCard
             pLink={item.pLink}
             imgUrl={lang == "en" ? item.imgUrl.en : item.imgUrl.ar}
             date={item.date}
             text={lang == "en" ? item.text.en : item.text.ar}
             title={lang == "en" ? item.title.en : item.title.ar}
+            key={index}
           />
         ))}
       {sarwaLife.length == 0 && (
@@ -31,13 +32,14 @@ const NewsMedia = () => {
     // sarwa-insurance ---------------------------------
     <div className={"container " + style.p_new}>
       {sarwaInsurance &&
-        sarwaInsurance.map((item) => (
+        sarwaInsurance.map((item,index) => (
           <NewsCard
             pLink={item.pLink}
             imgUrl={lang == "en" ? item.imgUrl.en : item.imgUrl.ar}
             date={item.date}
             text={lang == "en" ? item.text.en : item.text.ar}
             title={lang == "en" ? item.title.en : item.title.ar}
+            key={index}
           />
         ))}
       {sarwaInsurance.length == 0 && (

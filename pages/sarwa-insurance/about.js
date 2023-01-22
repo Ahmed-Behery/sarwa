@@ -8,8 +8,9 @@ const About = () => {
   return (
     <Fragment>
       <Head>
-        <title>Sarwa Insurance | About</title>
+        <title>Learn About Sarwa Insurance, the fastest-growing insurance company.</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Sarwa Insurance is set to be the fastest-growing insurance company in Egypt. Offering a wide range of both Personal and Commercial insurance solutions." />
       </Head>
       <div
         className={

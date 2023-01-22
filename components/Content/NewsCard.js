@@ -14,12 +14,14 @@ const NewsCard = (props) => {
             backgroundColor: location.pathname.includes("/sarwa-Life")
               ? "#016a59"
               : "#01528a",
+            aspectRatio: "1/1"
           }}
           className="col-md-3"
         >
           <picture>
             <source srcSet={props.imgUrl} type="image/webp" />
             <img
+              style={{ height: "100%" }}
               src={props.imgUrl}
               className="img-fluid img-h rounded-start"
               alt=""

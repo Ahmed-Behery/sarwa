@@ -14,10 +14,10 @@ const MediaLayout = () => {
         <Banner imgUrl={imgUrl} height={'250px'} />
       </a>
       <Tabs
-        tabTwoTitle={t('events')}
-        tabTwoContent={<EventsMedia />}
         tabOneTitle={t('news')}
         tabOneContent={<NewsMedia />}
+        tabTwoTitle={t('events')}
+        tabTwoContent={<EventsMedia />}
       />
     </div>
   );

@@ -1,19 +1,19 @@
 .slider__layout {
   position: relative;
   display: flex;
-  height: 600px;
+  /* height: 600px; */
   overflow: hidden;
 }
 
 .slider__layout__insurance {
   position: relative;
   display: flex;
-  height: 550px;
+  /* height: 550px; */
   overflow: hidden;
 }
 
 .slider__layout .image {
-  background-image: url("/updated-pics/SarwaLifeSlider.jpg");
+  background-image: url("/updated-pics/SarwaInsSlider.jpg");
   background-position: bottom;
   background-size: cover;
 }
@@ -70,7 +70,7 @@
 .slider__layout .shapes .circle .texts {
   width: 64%;
 }
-.slider__layout h4 {
+.slider__layout h1 {
   color: #fff;
   font-weight: bold;
   line-height: 100%;
@@ -102,9 +102,8 @@
   .slider__layout .image {
     width: 70%;
   }
-  .slider__layout .shapes .circle .texts {
-    position: relative;
-    right: 60px;
+  .shapes .circle .texts {
+    margin-top: 30px
   }
 }
 
@@ -113,7 +112,7 @@
 }
 
 .slider__layout .image_1 {
-  background-image: url("/updated-pics/SarwaInsSlider.jpg") !important;
+  background-image: url("/updated-pics/SarwaLifeSlider.jpg");
   background-size: cover;
   /* height: 600px; */
 }
@@ -133,19 +132,42 @@
 }
 @media (max-width: 768px) {
   .slider__layout .shapes .circle {
-    left: 3% !important;
+    /* left: 3% !important; */
   }
   .slider__layout .shapes .circle .texts {
-    width: 50% !important;
+    width: 70% !important;
+    margin-bottom: 0 !important;
   }
   .slider__layout .image {
     width: 100% !important;
   }
-  .slider__layout .shapes .circle .texts {
+  /* .slider__layout .shapes .circle .texts {
     position: relative;
     right: 0px !important;
   }
-  .slider__layout .shapes .circle h4 {
+  .slider__layout .shapes .circle h1 {
     font-size: 20px !important;
-  }
+  } */
+    
+  .slider__layout .shapes .circle {
+      /* left: 50%; */
+      width: 34vw !important;
+      height: 34vw !important;
+      min-width: 200px !important;
+      min-height: 200px !important;
+      border-radius: 50%;
+      background-color: #01528a;
+      z-index: 100;
+    }
+    .slider__life .shapes .circle {
+      background-color: #006958;
+    }
+  .slider__layout .texts p {
+      font-size: 12px !important;
+      /* line-height: 1.7; */
+    }
+  
+    .texts h1 {
+      font-size: 12px !important;
+    }
 }

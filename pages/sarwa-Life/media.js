@@ -8,8 +8,9 @@ const MediaPage = () => {
   return (
     <div>
       <Head>
-        <title>Sarwa Insurance | Our News</title>
+        <title>Sarwa Life’s latest Insurance News and events in Egypt </title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Sarwa Life Insurance | Learn about the latest Life insurance news and events in Egypt | Learn about life insurance plans and policies." />
       </Head>
       <div
         className={

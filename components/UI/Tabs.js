@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 const Tabs = (props) => {
   const { t, lang } = useTranslation("common");
   const location = useRouter();
-  const [toggleState, setToggleState] = useState(2);
+  const [toggleState, setToggleState] = useState(1);
   useEffect(() => {
     Aos.init();
   }, []);
@@ -27,22 +27,6 @@ const Tabs = (props) => {
       }
     >
       <ul className={style.nav + " nav-justified mb-3 " + style.tabs_p}>
-        <li id="retail" className={style.nav_item + " nav-item"}>
-          <a
-            onClick={() => toggleTabHandler(2)}
-            className={
-              toggleState === 2
-                ? style.nav_link +
-                  " nav-link " +
-                  style.tab_link +
-                  " " +
-                  style.active
-                : style.nav_link + " nav-link " + style.tab_link
-            }
-          >
-            <h6>{props.tabTwoTitle}</h6>
-          </a>
-        </li>
         <li id="commercial" className={style.nav_item + " nav-item"}>
           <a
             onClick={() => toggleTabHandler(1)}
@@ -57,6 +41,22 @@ const Tabs = (props) => {
             }
           >
             <h6>{props.tabOneTitle}</h6>
+          </a>
+        </li>
+        <li id="retail" className={style.nav_item + " nav-item"}>
+          <a
+            onClick={() => toggleTabHandler(2)}
+            className={
+              toggleState === 2
+                ? style.nav_link +
+                " nav-link " +
+                style.tab_link +
+                " " +
+                style.active
+                : style.nav_link + " nav-link " + style.tab_link
+            }
+          >
+            <h6>{props.tabTwoTitle}</h6>
           </a>
         </li>
       </ul>

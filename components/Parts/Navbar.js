@@ -52,7 +52,7 @@ const Menue = () => {
           style={{
             width: "90%",
             display: "flex",
-            // justifyContent: "space-around",
+            justifyContent: "space-between",
           }}
         >
           <Navbar.Brand className={style.logo}>

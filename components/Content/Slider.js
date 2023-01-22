@@ -42,9 +42,9 @@ const Slider = () => {
 
           <div className={style.circle}>
             <div className={style.texts}>
-              <h4 className={t("text-align")}>
+              <h1 className={t("text-align")}>
                 {t("sliderText1")} <span>{t("sliderText2")} </span>
-              </h4>
+              </h1>
               <p className={t("text-align")}>{t("sliderDesc")}</p>
             </div>
           </div>

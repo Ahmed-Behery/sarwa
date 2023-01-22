@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import { Navbar, NavbarBrand, NavDropdown, Nav } from 'react-bootstrap';
 import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image'
+import { height } from "@mui/system";
 
 const Footer = () => {
   const {t,lang} = useTranslation("common");
@@ -231,7 +232,14 @@ const Footer = () => {
           />
           </picture>
         </div>
-        
+        {location.pathname.includes("/sarwa-Life") ? "" :
+          <div className={style.award}>
+            <picture>
+              <img
+                src="https://image-solution-no-scale.s3.us-east-2.amazonaws.com/upload/Sarwa%20Insurance%20GOLD%20BADGE.png"
+                alt="Award" />
+            </picture>
+          </div>}
         <a
           className={"FRA pl-0 p-relative container w-100 text-center pt-4"}
           target="_blank"

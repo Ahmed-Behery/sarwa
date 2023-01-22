@@ -13,7 +13,7 @@ function Cards() {
 
   return (
     <div className={style.allcards}>
-      <h1
+      <h2
         className="text-center"
         data-aos="fade-down"
         data-aos-delay="100"
@@ -21,7 +21,7 @@ function Cards() {
         data-aos-duration="1500"
       >
         {t("cards-title")}
-      </h1>
+      </h2>
       <p
         className="text-center text-muted"
         data-aos="fade-down"
