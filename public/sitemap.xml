@@ -1,140 +1,135 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
->
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
 <url>
   <loc>https://sarwainsurance.netlify.app/</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://sarwainsurance.netlify.app/sarwa-insurance</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sarwainsurance.netlify.app/sarwa-Life</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sarwainsurance.netlify.app/privacy%20policy.pdf</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sarwainsurance.netlify.app/sarwa-insurance/about</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sarwainsurance.netlify.app/sarwa-insurance/product/retail</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sarwainsurance.netlify.app/sarwa-insurance/media</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sarwainsurance.netlify.app/sarwa-insurance/JoinUs</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sarwainsurance.netlify.app/sarwa-insurance/ContactUs</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sarwainsurance.netlify.app/sarwa-Life/about</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sarwainsurance.netlify.app/sarwa-Life/product/retail</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sarwainsurance.netlify.app/sarwa-Life/media</loc>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sarwainsurance.netlify.app/sarwa-Life/JoinUs</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sarwainsurance.netlify.app/sarwa-Life/ContactUs</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc
-    >https://sarwainsurance.netlify.app/sarwa-insurance/product/motorInsurance</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <loc>https://sarwainsurance.netlify.app/sarwa-insurance/product/motorInsurance</loc>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc
-    >https://sarwainsurance.netlify.app/sarwa-insurance/product/homeInsurance</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <loc>https://sarwainsurance.netlify.app/sarwa-insurance/product/homeInsurance</loc>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc
-    >https://sarwainsurance.netlify.app/sarwa-insurance/product/personalAccidents</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <loc>https://sarwainsurance.netlify.app/sarwa-insurance/product/personalAccidents</loc>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc
-    >https://sarwainsurance.netlify.app/sarwa-insurance/product/propertyInsurance</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <loc>https://sarwainsurance.netlify.app/sarwa-insurance/product/propertyInsurance</loc>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc
-    >https://sarwainsurance.netlify.app/sarwa-insurance/product/engineeringInsurance</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <loc>https://sarwainsurance.netlify.app/sarwa-insurance/product/engineeringInsurance</loc>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc
-    >https://sarwainsurance.netlify.app/sarwa-insurance/product/motorFleetInsurance</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <loc>https://sarwainsurance.netlify.app/sarwa-insurance/product/motorFleetInsurance</loc>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc
-    >https://sarwainsurance.netlify.app/sarwa-insurance/product/marineInsurance</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <loc>https://sarwainsurance.netlify.app/sarwa-insurance/product/marineInsurance</loc>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc
-    >https://sarwainsurance.netlify.app/sarwa-insurance/product/publicLiabilityInsurance</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <loc>https://sarwainsurance.netlify.app/sarwa-insurance/product/publicLiabilityInsurance</loc>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc
-    >https://sarwainsurance.netlify.app/sarwa-insurance/product/medicalInsurance</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <loc>https://sarwainsurance.netlify.app/sarwa-insurance/product/medicalInsurance</loc>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://sarwainsurance.netlify.app/11.pdf</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://sarwainsurance.netlify.app/22.pdf</loc>
-  <lastmod>2023-01-19T14:16:41+00:00</lastmod>
+  <lastmod>2023-01-22T12:04:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 
