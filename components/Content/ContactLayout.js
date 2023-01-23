@@ -107,7 +107,7 @@ const ContactLayout = (props) => {
   return (
     <div>
       <div dir={t('dir')} className={"container " + style.contact__layout}>
-        <div className="row">
+        <div className="row m-0">
           <div className="col-lg-12">
             <p
               className={"text-center " + style.branchTit}
@@ -118,7 +118,7 @@ const ContactLayout = (props) => {
             </p>
           </div>
         </div>
-        <div className="row">
+        <div className="row m-0">
           <div className="col-lg-12">
             <BranchesDropdown />
           </div>

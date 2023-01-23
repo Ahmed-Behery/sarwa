@@ -85,7 +85,7 @@ const PolicyCard2 = (props) => {
       data-aos-delay="200"
       data-aos-once="true"
       data-aos-duration="2000"
-      className="policy__card card "
+      className="policy__card card mb-3"
     >
       {card}
     </div>

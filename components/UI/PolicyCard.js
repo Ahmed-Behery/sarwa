@@ -15,7 +15,7 @@ const PolicyCard = (props) => {
   
   const imgInRight = (
     <Fragment>
-    <div className="row g-0 img-right">
+    <div className="row g-1 mb-2 img-right">
       <div className={t('text-align') + ' col-md-6 ' +style.policy__body}>
         <div className={style.card_body +" "+ style.card_info}>
           <span className={style.card_title}>{props.title}</span>
@@ -91,7 +91,7 @@ const PolicyCard = (props) => {
       data-aos-delay="200"
       data-aos-once="true"
       data-aos-duration="2000"
-      className="policy__card card"
+      className="policy__card card mb-3"
     >
       {card}
     </div>

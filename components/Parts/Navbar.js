@@ -74,7 +74,7 @@ const Menue = () => {
           </Navbar.Brand>
 
           <Navbar.Toggle
-            className={t("toggel") + " " + t("text-align1") + "  shadow-none"}
+            className={t("toggel") + " " + t("text-align1") + "  shadow-none border-0"}
             aria-controls="basic-navbar-nav"
           />
           <Navbar.Collapse id={style.basic_navbar_nav}>

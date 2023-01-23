@@ -12,7 +12,7 @@ function About() {
 
   return (
     <div dir={t("dir")} className={style.about_section} >
-      <div className="container">
+      <div className="container overflow-hidden">
         <div className="row align-items-center">
           <div className="col-lg-6">
               <div className={style.site_title} 

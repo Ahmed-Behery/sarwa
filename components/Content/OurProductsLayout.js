@@ -74,7 +74,7 @@ const OurProductsLayout = () => {
         height={"250px"}
       />
 
-      <div className="container mt-4 pg">
+      <div className="container mt-4 pg overflow-hidden">
         <Tabs
           className="product-d"
           tabOneTitle={t("retail")}

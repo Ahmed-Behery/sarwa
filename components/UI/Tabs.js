@@ -26,76 +26,78 @@ const Tabs = (props) => {
         (location.pathname.includes("/sarwa-Life") ? style.color_green : "")
       }
     >
-      <ul className={style.nav + " nav-justified mb-3 " + style.tabs_p}>
-        <li id="commercial" className={style.nav_item + " nav-item"}>
-          <a
-            onClick={() => toggleTabHandler(1)}
-            className={
-              toggleState === 1
-                ? style.nav_link +
+      <div className="container"> 
+        <ul className={style.nav + " nav-justified mb-3 " + style.tabs_p}>
+          <li id="commercial" className={style.nav_item + " nav-item"}>
+            <a
+              onClick={() => toggleTabHandler(1)}
+              className={
+                toggleState === 1
+                  ? style.nav_link +
                   " nav-link " +
                   style.tab_link +
                   " " +
                   style.active
-                : style.nav_link + " nav-link " + style.tab_link
-            }
-          >
-            <h6>{props.tabOneTitle}</h6>
-          </a>
-        </li>
-        <li id="retail" className={style.nav_item + " nav-item"}>
-          <a
-            onClick={() => toggleTabHandler(2)}
-            className={
-              toggleState === 2
-                ? style.nav_link +
-                " nav-link " +
-                style.tab_link +
-                " " +
-                style.active
-                : style.nav_link + " nav-link " + style.tab_link
-            }
-          >
-            <h6>{props.tabTwoTitle}</h6>
-          </a>
-        </li>
-      </ul>
+                  : style.nav_link + " nav-link " + style.tab_link
+              }
+            >
+              <h6>{props.tabOneTitle}</h6>
+            </a>
+          </li>
+          <li id="retail" className={style.nav_item + " nav-item"}>
+            <a
+              onClick={() => toggleTabHandler(2)}
+              className={
+                toggleState === 2
+                  ? style.nav_link +
+                  " nav-link " +
+                  style.tab_link +
+                  " " +
+                  style.active
+                  : style.nav_link + " nav-link " + style.tab_link
+              }
+            >
+              <h6>{props.tabTwoTitle}</h6>
+            </a>
+          </li>
+        </ul>
 
-      <div
-        className="tab-content"
-        data-aos="fade-up"
-        data-aos-delay="100"
-        data-aos-once="true"
-        data-aos-duration="1000"
-      >
         <div
-          className={
-            toggleState === 1 ? "tab-pane fade show active" : "tab-pane"
-          }
-          id={toggleState === 1 ? "n1" : "n2"}
+          className="tab-content"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-once="true"
+          data-aos-duration="1000"
         >
-          <Animated
-            animationInDuration="2000"
-            animationIn="fadeIn"
-            animationOut="fadeOut"
-            isVisible={true}
+          <div
+            className={
+              toggleState === 1 ? "tab-pane fade show active" : "tab-pane"
+            }
+            id={toggleState === 1 ? "n1" : "n2"}
           >
-            {props.tabOneContent}
-          </Animated>
-        </div>
-        <div
-          className={
-            toggleState === 2 ? "tab-pane fade show active" : "tab-pane"
-          }
-        >
-          <Animated
-            animationInDuration="2000"
-            animationIn="fadeIn"
-            animationOut="fadeOut"
-            isVisible={true}
+            <Animated
+              animationInDuration="2000"
+              animationIn="fadeIn"
+              animationOut="fadeOut"
+              isVisible={true}
+            >
+              {props.tabOneContent}
+            </Animated>
+          </div>
+          <div
+            className={
+              toggleState === 2 ? "tab-pane fade show active" : "tab-pane"
+            }
           >
-            {props.tabTwoContent}
-          </Animated>
+            <Animated
+              animationInDuration="2000"
+              animationIn="fadeIn"
+              animationOut="fadeOut"
+              isVisible={true}
+            >
+              {props.tabTwoContent}
+            </Animated>
+          </div>
         </div>
       </div>
     </div>
