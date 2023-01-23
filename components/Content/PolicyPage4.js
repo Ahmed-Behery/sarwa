@@ -79,7 +79,7 @@ const PolicyPage6 = (props) => {
                 >
                   <picture>
                     <source srcSet="https://contact-clients-dev.s3.amazonaws.com/GlobeMed.jpg" type="image/webp"/>
-                    <img alt="" width="150" src="https://contact-clients-dev.s3.amazonaws.com/GlobeMed.jpg" />
+                    <img alt={t('md_title')} width="150" src="https://contact-clients-dev.s3.amazonaws.com/GlobeMed.jpg" />
                   </picture>
                 </a>
               </p>

@@ -41,7 +41,7 @@ const PolicyCard = (props) => {
             <img
             src={props.imgUrl}
             className="img-fluid rounded-start pro-img"
-            alt=""
+              alt={`product ${props.title}`}
           />
         </picture>
       </div>
@@ -57,7 +57,7 @@ const PolicyCard = (props) => {
           <img
           src={props.imgUrl}
           className="img-fluid rounded-start pro-img"
-          alt=""
+            alt={`product ${props.title}`}
         />
         </picture>
       </div>
@@ -66,7 +66,6 @@ const PolicyCard = (props) => {
           <span className={style.card_title}>{props.title}</span>
           <h6 className={style.suptitleq}>{props.supTitle}</h6>
           <p className={style.card_text}>{props.text}</p>
-       
           {location.pathname.includes('/sarwa-Life') ? (
             <a
               href="#reqP"
@@ -76,7 +75,7 @@ const PolicyCard = (props) => {
             </a>
           ) : (
             <Link href={props.proLink} >
-             <a className={t('text-align') + " " + style.read_btn}> {t('read-more')}</a>
+              <a className={t('text-align') + " " + style.read_btn}> {t('read-more')}</a>
             </Link>
           )}
         </div>

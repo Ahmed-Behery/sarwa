@@ -24,7 +24,7 @@ const ArticleCard = (props) => {
           src={props.imgUrl}
           width="140"
           height="140"
-          alt=""
+          alt={`user profile picture - ${props.title}`}
         />
       </picture>
       <h2 className="text-center pt-2">{props.title}</h2>

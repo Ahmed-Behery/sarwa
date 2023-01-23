@@ -45,7 +45,7 @@ const  AnimatedDropdown = () => {
             {" "}
             <picture>
               <source srcSet="https://contact-clients-dev.s3.amazonaws.com/GlobeMed.jpg" type="image/webp"/>
-              <img alt="" className="dr-img mb-1" width="120" src="https://contact-clients-dev.s3.amazonaws.com/GlobeMed.jpg" />
+              <img alt="Globe Med Logo" className="dr-img mb-1" width="120" src="https://contact-clients-dev.s3.amazonaws.com/GlobeMed.jpg" />
             </picture>
             
           </a>{" "}

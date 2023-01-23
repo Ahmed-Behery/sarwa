@@ -9,7 +9,7 @@ const SliderLife = () => {
       {/*<div className={style.image + " " + style.image_1}></div>*/}
       <div className={style.shapes + " w-100"}>
         <picture>
-          <img className="d-block w-100" src="/updated-pics/SarwaLifeSlider.jpg" alt="" />
+          <img className="d-block w-100" src="/updated-pics/SarwaLifeSlider.jpg" alt="SarwaLifeSlider" />
         </picture>
         <div className={style.circle}>
           <div

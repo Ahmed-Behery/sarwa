@@ -38,7 +38,7 @@ const PolicyCard2 = (props) => {
       <div className="col-md-6 img-h">
         <picture>
             <source srcSet={props.imgUrl}/>
-            <img src={props.imgUrl} className="img-fluid rounded-start" alt="" />
+          <img src={props.imgUrl} className="img-fluid rounded-start" alt={`product ${props.title}`} />
         </picture>
       </div>
     </div>

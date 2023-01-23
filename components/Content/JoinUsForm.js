@@ -115,7 +115,7 @@ const JoinUsForm = () => {
         </div>
         <picture>
           <source srcSet="/updated-pics/JoinUsWhy.png" type="image/webp" />
-          <img alt="" src="/updated-pics/JoinUsWhy.png" />
+          <img alt="Why to join us" src="/updated-pics/JoinUsWhy.png" />
         </picture>
       </div>
 

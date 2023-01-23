@@ -19,8 +19,8 @@ const SocialMedia = () => {
   return (
 
     <div className={style.social_container }>
-      <div className="row">
-      <div className="col-lg-12">
+      <div className="row w-100" >
+      <div className="col-lg-12 mx-0 px-0" >
         { location.pathname.includes("/sarwa-insurance") ?
         <ul className={style.social_icons}>
           <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/sarwa-insurance/"><i><FontAwesomeIcon icon={faLinkedinIn} /></i></a></li>

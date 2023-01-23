@@ -62,7 +62,7 @@ const Menue = () => {
                   width={280}
                   height={110}
                   className="banner-img"
-                  alt="img"
+                  alt="Sarwa Insurance Logo"
                   src={
                     location.pathname.includes("sarwa-Life")
                       ? "https://contact-clients-dev.s3.amazonaws.com/NavbarSarwaLifeLogo.webp"

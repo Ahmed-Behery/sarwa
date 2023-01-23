@@ -23,7 +23,7 @@ const Banner = (props) => {
     >
       <Image
         className="banner-img"
-        alt="img"
+        alt="Bannar img"
         src={props.imgUrl}
         layout="fill"
         objectFit="cover"

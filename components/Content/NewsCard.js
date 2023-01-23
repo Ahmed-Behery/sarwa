@@ -24,7 +24,7 @@ const NewsCard = (props) => {
               style={{ height: "100%" }}
               src={props.imgUrl}
               className="img-fluid img-h rounded-start"
-              alt=""
+              alt={props.title}
             />
           </picture>
         </div>

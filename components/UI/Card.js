@@ -11,7 +11,7 @@ const Card = (props) => {
     >
       <picture>
         <source srcSet={props.icon} type="image/webp"/>
-        <img className="w-100" src={props.icon} alt=""/>
+        <img className="w-100" src={props.icon} alt={` ${props.content} Card`}/>
       </picture>
       {props.content}
     </div>

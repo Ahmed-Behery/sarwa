@@ -21,7 +21,7 @@ const Value = (props) => {
     >
       <picture>
         <source srcSet={props.imgUrl} type="image/webp"/>
-        <img className="rounded-2 " src={props.imgUrl} width="140" height="140" alt=""/>
+        <img className="rounded-2 " src={props.imgUrl} width="140" height="140" alt={props.title} />
       </picture>
       <span className="text-center d-block pb-2 pt-2">{props.title}</span>
       <h5 className="font-bold">{t("value_title1")}</h5>

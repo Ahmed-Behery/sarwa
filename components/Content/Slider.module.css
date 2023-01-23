@@ -103,7 +103,12 @@
     width: 70%;
   }
   .shapes .circle .texts {
-    margin-top: 30px
+    margin-top: 25px;
+    line-height: 1
+  }
+  .texts h1 {
+    margin-bottom: 0;
+    line-height: 1;
   }
 }
 

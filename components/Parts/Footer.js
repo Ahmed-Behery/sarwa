@@ -215,7 +215,7 @@ const Footer = () => {
                 : "https://contact-clients-dev.s3.amazonaws.com/FooterInsuranceLogoEn.png"
 
             } type="image/webp"/>
-            <img alt=""
+            <img alt="Sarwa Life Logo"
             src={
               t("lang") == "ar" 
               ? 

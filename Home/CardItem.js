@@ -19,13 +19,13 @@ function CardItem(props) {
             }}
             className={style.cards__item__link + " " + props.borderTop}
           >
-            <figure className={style.cards__item__pic_wrap}>
+            <picture className={style.cards__item__pic_wrap}>
               <img
                 className={style.cards__item__img}
                 alt="Travel Image"
                 src={props.src}
               />
-            </figure>
+            </picture>
           </a>
         </Link>
       </li>
