@@ -84,7 +84,7 @@ const PolicyPage3 = (props) => {
                     type="text"
                     className={t("text-align") + " form-control "}
                     placeholder={t("namePlace1")}
-                    required=""
+                    required
                     id="firstName"
                     onChange={(e) => handl(e)}
                   />
@@ -95,7 +95,7 @@ const PolicyPage3 = (props) => {
                     type="email"
                     placeholder={t("mailPlace")}
                     className={t("text-align") + " form-control "}
-                    required=""
+                    required
                     id="email"
                     onChange={(e) => handl(e)}
                   />
@@ -105,7 +105,7 @@ const PolicyPage3 = (props) => {
                     placeholder={t("phonePlace")}
                     type="text"
                     className={t("text-align") + " form-control "}
-                    required=""
+                    required
                     id="phone"
                     onChange={(e) => handl(e)}
                   />
@@ -115,7 +115,7 @@ const PolicyPage3 = (props) => {
                     type="text"
                     placeholder={t("city")}
                     className={t("text-align") + " form-control "}
-                    required=""
+                    required
                     id="city"
                     onChange={(e) => handl(e)}
                   />
