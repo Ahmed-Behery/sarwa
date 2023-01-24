@@ -54,7 +54,7 @@ const Menue = () => {
             display: "flex",
             justifyContent: "space-between",
           }}
-          className= "nav-content"
+          className={style.navContent}
         >
           <Navbar.Brand className={style.logo}>
             <Link href={url}>

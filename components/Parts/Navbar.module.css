@@ -46,11 +46,9 @@
   .nav_ {
     justify-content: start !important;
   }
-  .nav_ .nav-content {
-    flex-wrap: wrap;
-  }
+ 
   .nav_ .navbar_nav {
-    /* width: 100vw; */
+    /* width: 100vw !important; */
   }
 }
 
@@ -260,6 +258,9 @@
     /* float: left; */
     align-items: start !important;
     flex-direction: column;
+  }
+  .navContent{
+    flex-wrap: wrap;
   }
   .social_icons a:before {
     width: 35px;
