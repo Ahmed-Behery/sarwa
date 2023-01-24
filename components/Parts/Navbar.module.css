@@ -46,8 +46,11 @@
   .nav_ {
     justify-content: start !important;
   }
+  .nav_ .nav-content {
+    flex-wrap: wrap;
+  }
   .nav_ .navbar_nav {
-    width: 100vw;
+    /* width: 100vw; */
   }
 }
 
@@ -253,7 +256,7 @@
 }
 @media (max-width: 992px) {
   .nav_ .navbar_nav {
-    width: 100vw;
+    /* width: 100vw; */
     /* float: left; */
     align-items: start !important;
     flex-direction: column;

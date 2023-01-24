@@ -54,7 +54,7 @@ const PolicyPage5 = (props) => {
       </div>
       <div>
         <div dir={t("dir")} className="container">
-          <div className="row ">
+          <div className="row mx-0">
             <div className={style.article__card +" col-lg-12 " +style3.policy_title_i}>
               <h1> {t("lca1")}</h1>
               <p className={style3.font_blue +" py-4 " + style3.sec_title}> {t("lca2")}</p>
@@ -70,7 +70,7 @@ const PolicyPage5 = (props) => {
             </div>
           </div>
         </div>
-        <div className="row bg">
+        <div className="row bg mx-0">
           <Banner imgUrl={backgroundUrl} />
           <div className={"col-lg-6 "+style3.policyForm}>
             <div className={style1.join__form +" my-5"} id={style1.join}>

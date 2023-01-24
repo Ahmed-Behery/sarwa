@@ -12,7 +12,7 @@ function Cards() {
   }, []);
 
   return (
-    <div className={style.allcards}>
+    <div className={style.allcards + " container"}>
       <h2
         className="text-center"
         data-aos="fade-down"

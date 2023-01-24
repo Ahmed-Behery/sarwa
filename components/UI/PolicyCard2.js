@@ -13,7 +13,7 @@ const PolicyCard2 = (props) => {
   const location = useRouter();
   const animationSlideDirection = props.imgRight ? 'fade-left' : 'fade-right';
   const imgInRight = (
-    <div className="row g-0 img-right ">
+    <div className="row g-0 img-right">
       <div className={t('text-align') + ' col-md-6 policy__body'}>
         <div className={style.card_body +" "+  style.card_info}>
           <span className={style.card_title}>{props.title}</span>
@@ -45,11 +45,11 @@ const PolicyCard2 = (props) => {
   );
 
   const imgInLeft = (
-    <div className="row g-0 img-left">
+    <div className="row g-0 img-left ">
       <div className="col-md-6 img-h">
         <picture>
           <source srcSet={props.imgUrl}/>
-          <img src={props.imgUrl} className="img-fluid rounded-start" alt="" />
+          <img src={props.imgUrl} className="img-fluid rounded-start" alt={`product ${props.title}`} />
         </picture>
       </div>
       <div className={t('text-align') + ' col-md-6 policy__body'}>

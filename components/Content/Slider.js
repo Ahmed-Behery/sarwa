@@ -41,7 +41,7 @@ const Slider = () => {
       <Carousel.Item>
         <div className={style.shapes}>
           <picture>
-            <img className="d-block w-100" src={sliderImg2} alt="" />
+            <img className="d-block w-100" src={sliderImg2} alt={t("sliderText1") + t("sliderText2") } />
           </picture>
 
           <div className={style.circle}>

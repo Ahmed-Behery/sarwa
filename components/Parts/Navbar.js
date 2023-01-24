@@ -54,6 +54,7 @@ const Menue = () => {
             display: "flex",
             justifyContent: "space-between",
           }}
+          className= "nav-content"
         >
           <Navbar.Brand className={style.logo}>
             <Link href={url}>
@@ -78,7 +79,7 @@ const Menue = () => {
             aria-controls="basic-navbar-nav"
           />
           <Navbar.Collapse id={style.basic_navbar_nav}>
-            <Nav className="nav-contain" id="navbar">
+            <Nav className="nav-contain overflow-hidden" id="navbar">
               <ul
                 className={
                   lang === "en"
