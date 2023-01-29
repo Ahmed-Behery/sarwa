@@ -297,5 +297,26 @@
   "insurance": "Insurance",
   "cardNumber": "Card Number",
   "aCustomer": "Are you customer",
-  "typeCust": "Type of customer"
+  "typeCust": "Type of customer",
+
+  
+  "he": "Protection against cancer risks for men",
+  "she": "Protection against cancer risks for females",
+  "acc":"Group Personal Accidents",
+  "proTitle1L":"Saving & Protection ",
+  "proTitle2L":"Life & Disability Coverage  ",
+  "proTitle3L":"Life & Disability Long Term Coverage ",
+  "ins":"Group Credit Life ",
+  "co":"Group Pension ",
+  "med":"Group Medical",
+  "sem":"Small & Medium Enterprises Packages (SME’S)",
+  "accp":"Voluntary Personal Accidents Plan",
+
+
+  "heDesc": "One of the best protection programs against cancer risks for men, and it is characterized by a low cost that does not exceed several pounds",
+  "sheDesc": "One of the best protection programs against cancer risks for females, and it is characterized by a low cost that does not exceed several pounds.",
+  "pro": "Group Insurance Policy - Protection",
+  "proDesc": "This product offers excellent protection against the risks of death, permanent complete disability, or permanent partial disability for corporate employees, at a distinct cost and easy joining conditions.",
+  "smoke": "Protection against the dangers of smoking",
+  "smokeDesc": "At an affordable cost, this program offers protection against major critical diseases, including lung cancer, oral and pharyngeal cancer, stroke and heart attack, diseases in which smoking is often the main cause of their occurrence."
 }

@@ -204,9 +204,11 @@ const OurProductsLayout = () => {
                     <option className={style.opt_title} disabled>
                       {t("retailT")}
                     </option>
-                    {lifeRetail.map(function (policy, index) {
+                    {lifeRetail.map( (policy, index) => {
                       return <option key={index}>{policy}</option>;
                     })}
+                    
+
 
                     <option className={style.opt_title} disabled>
                       {t("comercial")}
