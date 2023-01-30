@@ -79,7 +79,8 @@ const Menue = () => {
             aria-controls="basic-navbar-nav"
           />
           <Navbar.Collapse id={style.basic_navbar_nav}>
-            <Nav className="nav-contain overflow-hidden" id="navbar">
+            {/* <Nav className="nav-contain overflow-hidden" id="navbar"> */}
+            <Nav className="nav-contain" id="navbar">
               <ul
                 className={
                   lang === "en"

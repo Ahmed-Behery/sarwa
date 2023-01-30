@@ -23,6 +23,7 @@ const  AnimatedDropdown = () => {
       delay={300}
       align="CENTER"
       hover
+      
     >
       <div
         className={style.AnimatedDropdownStyles +" "+ style.openAnimation+`${
