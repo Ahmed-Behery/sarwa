@@ -139,17 +139,30 @@ const Footer = () => {
               <h5> {t("mediaF")} </h5>
               <Link
                 href={
-                  location.pathname.includes("/sarwa-Life") ? "#" : "/sarwa-insurance/media"
+                  {
+                    pathname:  location.pathname.includes("/sarwa-Life") ? "/sarwa-Life/media" : "/sarwa-insurance/media",
+                    query: {
+                      data: 'news'
+                    }, // the data
+                  }
                 }
+                as={location.pathname.includes("/sarwa-Life") ? "/sarwa-Life/media" : "/sarwa-insurance/media"}
+
               >
                 <a>{t("newsF")}</a>
               </Link>
             </li>
             <li className={style.nav_item +" nav-item"}>
               <Link
-                href={
-                  location.pathname.includes("/sarwa-Life") ? "#" : "#"
+                href={{
+                  pathname: location.pathname.includes("/sarwa-Life") ? "/sarwa-Life/media" : "/sarwa-insurance/media",
+                  query: {
+                    data: 'events'
+                  }, // the data
                 }
+                }
+                as={location.pathname.includes("/sarwa-Life") ? "/sarwa-Life/media" : "/sarwa-insurance/media"}
+                
               >
                 <a>{t("eventsF")}</a>
               </Link>
@@ -176,6 +189,7 @@ const Footer = () => {
             </li>
             <li className={style.nav_item +" nav-item"}>
               <Link
+              
                 href={
                   location.pathname.includes("/sarwa-Life")
                     ? "/sarwa-Life/ContactUs"

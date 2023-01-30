@@ -4,6 +4,8 @@ import Head from "next/head";
 
 const MediaPage = () => {
   const location = useRouter();
+  const {data} = location.query;
+
 
   return (
     <div>
@@ -17,7 +19,7 @@ const MediaPage = () => {
           location.pathname.includes("/sarwa-Life") ? "color-green " : ""
         }
       >
-        <MediaLayout />
+        <MediaLayout  tabType={data} />
       </div>
     </div>
   );

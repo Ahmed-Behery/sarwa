@@ -1,6 +1,6 @@
 import Aos from "aos";
 import { Animated } from "react-animated-css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import style from "./Tabs.module.css";
 import useTranslation from "next-translate/useTranslation";
 import { useRouter } from "next/router";
@@ -9,8 +9,14 @@ const Tabs = (props) => {
   const { t, lang } = useTranslation("common");
   const location = useRouter();
   const [toggleState, setToggleState] = useState(1);
+
+  const eventsRef = useRef();
+
   useEffect(() => {
     Aos.init();
+    if(props.tabType === 'events'){
+      eventsRef.current.click();
+    }
   }, []);
 
   const toggleTabHandler = (index) => {
@@ -57,7 +63,7 @@ const Tabs = (props) => {
                   : style.nav_link + " nav-link " + style.tab_link
               }
             >
-              <h6>{props.tabTwoTitle}</h6>
+              <h6 ref={eventsRef}>{props.tabTwoTitle}</h6>
             </a>
           </li>
         </ul>
