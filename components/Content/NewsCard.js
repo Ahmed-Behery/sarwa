@@ -14,7 +14,7 @@ const NewsCard = (props) => {
             backgroundColor: location.pathname.includes("/sarwa-Life")
               ? "#016a59"
               : "#01528a",
-            aspectRatio: "1/1"
+            aspectRatio: "1/1",
           }}
           className="col-md-3"
         >

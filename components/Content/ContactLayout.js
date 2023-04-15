@@ -1,25 +1,23 @@
-import Aos from 'aos';
-import { useEffect } from 'react';
-import BranchesDropdown from './BranchesDropdown';
-import ContactForm from './ContactForm';
-import style from './ContactLayout.module.css';
-import { useRouter } from 'next/router'
-import Image from 'next/image'
-import FilterFieldDropdown from './FilterFieldDropdown';
+import Aos from "aos";
+import { useEffect } from "react";
+import BranchesDropdown from "./BranchesDropdown";
+import ContactForm from "./ContactForm";
+import style from "./ContactLayout.module.css";
+import { useRouter } from "next/router";
+import Image from "next/image";
+import FilterFieldDropdown from "./FilterFieldDropdown";
 // import {
 //   GoogleMap,
 //   withScriptjs,
 //   withGoogleMap,
 //   Marker,
 // } from 'react-google-maps';
-import React from 'react';
-import useTranslation from 'next-translate/useTranslation';
+import React from "react";
+import useTranslation from "next-translate/useTranslation";
 
-const onMarkerClick = (evt) => {
-  
-};
+const onMarkerClick = (evt) => {};
 let handleMarkerClickL = () => {
-  location.replace('https://goo.gl/maps/tLNP6dSXspFWhTRTA');
+  location.replace("https://goo.gl/maps/tLNP6dSXspFWhTRTA");
 };
 // const MyMapComponent = withScriptjs(
 //   withGoogleMap((props) => (
@@ -69,44 +67,43 @@ let handleMarkerClickL = () => {
 // );
 
 function SimpleMap() {
-  
   return (
     // <GoogleMap
-      // defaultZoom={10}
-      // defaultCenter={{ lat: 30.04048, lng: 31.20948 }}
+    // defaultZoom={10}
+    // defaultCenter={{ lat: 30.04048, lng: 31.20948 }}
     // />
     <></>
   );
 }
 // const WrappedMap = withScriptjs(withGoogleMap(SimpleMap));
 const ContactLayout = (props) => {
-  let hotAr = 'https://www.linkpicture.com/q/اتصل-بنا_2.png';
+  let hotAr = "https://www.linkpicture.com/q/اتصل-بنا_2.png";
 
-  const {t,lang} = useTranslation("common");
+  const { t, lang } = useTranslation("common");
   const location = useRouter();
   useEffect(() => {
     Aos.init();
   }, []);
 
   let handleMarkerClick = () => {
-    location.replace('https://goo.gl/maps/GhGfAUGY8Uo2kpfH6');
+    location.replace("https://goo.gl/maps/GhGfAUGY8Uo2kpfH6");
   };
   let handleMarkerClick3 = () => {
-    location.replace('https://goo.gl/maps/A57RHVmUygw8wpRaA');
+    location.replace("https://goo.gl/maps/A57RHVmUygw8wpRaA");
   };
   let handleMarkerClick1 = () => {
-    location.replace('https://goo.gl/maps/U9rrLrAZVB9bZPTz6');
+    location.replace("https://goo.gl/maps/U9rrLrAZVB9bZPTz6");
   };
   let handleMarkerClick2 = () => {
-    location.replace('https://goo.gl/maps/6yoURotXeYAU5aDD9');
+    location.replace("https://goo.gl/maps/6yoURotXeYAU5aDD9");
   };
   let handleMarkerClick4 = () => {
-    location.replace('https://goo.gl/maps/xYZQh1Ua85SebmvQ7');
+    location.replace("https://goo.gl/maps/xYZQh1Ua85SebmvQ7");
   };
-  
+
   return (
     <div>
-      <div dir={t('dir')} className={"container " + style.contact__layout}>
+      <div dir={t("dir")} className={"container " + style.contact__layout}>
         <div className="row m-0">
           <div className="col-lg-12">
             <p
@@ -114,7 +111,7 @@ const ContactLayout = (props) => {
               data-aos-once="true"
               data-aos-duration="1000"
             >
-              {t('branches')}
+              {t("branches")}
             </p>
           </div>
         </div>
@@ -155,7 +152,7 @@ const ContactLayout = (props) => {
           */}
         </div>
 
-        <h2 className="text-center mt-4">{t('contact')}</h2>
+        <h2 className="text-center mt-4">{t("contact")}</h2>
         <ContactForm />
       </div>
     </div>

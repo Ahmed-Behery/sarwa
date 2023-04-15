@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./Footer.module.css";
-import  Link  from "next/link";
-import useTranslation from 'next-translate/useTranslation';
+import Link from "next/link";
+import useTranslation from "next-translate/useTranslation";
 // import pdf from "../assets/privacy policy.pdf";
 
 function Footer() {
-  const {t} = useTranslation("common");
+  const { t } = useTranslation("common");
 
   return (
     <div dir={t("dir")} className={style.footer_dark}>
@@ -17,23 +17,25 @@ function Footer() {
               <ul>
                 <li>
                   <Link href="/sarwa-Life">
-                    <a >
-                      {t("sarwa-life")}
-                    </a>
+                    <a>{t("sarwa-life")}</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/sarwa-insurance">
-                    <a>
-                      {t("sarwa-insurance")}
-                    </a>
+                    <a>{t("sarwa-insurance")}</a>
                   </Link>
                 </li>
               </ul>
             </div>
-            <div className={`col-sm-6 col-md-3 col-lg-5 ${style.item} text-center`}>
+            <div
+              className={`col-sm-6 col-md-3 col-lg-5 ${style.item} text-center`}
+            >
               <h3>
-                <a className={style.priv_title} target="_blank" href="./privacy policy.pdf">
+                <a
+                  className={style.priv_title}
+                  target="_blank"
+                  href="./privacy policy.pdf"
+                >
                   {t("privacy-policy")}
                 </a>
               </h3>
@@ -41,7 +43,11 @@ function Footer() {
             </div>
             <div className={`col-md-6 col-lg-5  ${style.item} ${style.text}`}>
               <h3 className={style.fra}>
-                <a target="_blank" rel="noreferrer" href="https://fra.gov.eg/wp-content/uploads/2021/06/flyer-insurance.pdf "
+                <a
+                  className="footer_link"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://fra.gov.eg/wp-content/uploads/2021/06/flyer-insurance.pdf "
                 >
                   {t("fr")}{" "}
                 </a>

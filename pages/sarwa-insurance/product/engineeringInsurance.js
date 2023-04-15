@@ -1,15 +1,20 @@
 import PolicyPage8 from "../../../components/Content/PolicyPage8";
-import Head from 'next/head'
+import Head from "next/head";
 const EngineeringInsurance = () => {
-    return (
-        <div>
-            <Head>
-                <title>Sarwa Engineering Insurance - Cover all Your Projects&apos; risks</title>
-                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                <meta name="description" content="Sarwa Engineering Insurance handles all your projects' risks; our multidisciplinary capabilities make us qualified to provide you with total project coverage." />
-            </Head>
-            <PolicyPage8 />
-        </div>
-    );
-}
+  return (
+    <div>
+      <Head>
+        <title>
+          Sarwa Engineering Insurance - Cover all Your Projects' risks
+        </title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content="Sarwa Engineering Insurance handles all your projects' risks; our multidisciplinary capabilities make us qualified to provide you with total project coverage"
+        />
+      </Head>
+      <PolicyPage8 />
+    </div>
+  );
+};
 export default EngineeringInsurance;
