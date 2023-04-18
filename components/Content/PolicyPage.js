@@ -2,17 +2,19 @@ import style from "../UI/ArticleCard.module.css";
 import style1 from "./JoinUsForm.module.css";
 import Banner from "../UI/Banner";
 import style3 from "../Content/policyPage.module.css";
-import { useRouter } from 'next/router'
-import useTranslation from 'next-translate/useTranslation';
+import { useRouter } from "next/router";
+import useTranslation from "next-translate/useTranslation";
 import { useState } from "react";
 import axios from "axios";
 
 const PolicyPage1 = (props) => {
-  const {t,lang} = useTranslation("common");
+  const { t, lang } = useTranslation("common");
   const location = useRouter();
 
-  const imgUrl = "https://contact-clients-dev.s3.amazonaws.com/ProdMotorBannar.png";
-  const backgroundUrl = "https://contact-clients-dev.s3.amazonaws.com/ProdMotorBackground.png";
+  const imgUrl =
+    "https://contact-clients-dev.s3.amazonaws.com/ProdMotorBannar.png";
+  const backgroundUrl =
+    "https://contact-clients-dev.s3.amazonaws.com/ProdMotorBackground.png";
   const url = "https://website-api.sarwa.insurance/service-requests";
   const [data, setData] = useState({
     name: "",
@@ -21,9 +23,7 @@ const PolicyPage1 = (props) => {
     city: "",
     description: t("car1_title"),
 
-    source: location.pathname.includes("sarwa-Life")
-      ? "Life"
-      : "Insurance",
+    source: location.pathname.includes("sarwa-Life") ? "Life" : "Insurance",
   });
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -38,15 +38,12 @@ const PolicyPage1 = (props) => {
         description: data.description,
         source: data.source,
       })
-      .then((res) => {
-        
-      });
+      .then((res) => {});
   };
   function handl(e) {
     const newdata = { ...data };
     newdata[e.target.id] = e.target.value;
     setData(newdata);
-    
   }
   return (
     <div>
@@ -56,12 +53,19 @@ const PolicyPage1 = (props) => {
       <div>
         <div dir={t("dir")} className="container">
           <div className="row mx-0">
-            <div className={style.article__card +" col-lg-12 " +style3.policy_title_i}>
+            <div
+              className={
+                style.article__card + " col-lg-12 " + style3.policy_title_i
+              }
+            >
               <h1> {t("car1_title")}</h1>
               <p className={t("text-align") + "py-4"}> {t("car1_content")} </p>
               <p className={style3.content}>{t("car1_content1")}</p>
               <p className=" ">{t("car1_content2")}</p>
-              <p className={style3.font_blue +" py-4"}> {t("car1_content3")}</p>
+              <p className={style3.font_blue + " py-4"}>
+                {" "}
+                {t("car1_content3")}
+              </p>
               <ul className={t("text-align")}>
                 <li>{t("car1_content4")}</li>
                 <li> {t("car1_content5")}</li>
@@ -73,8 +77,8 @@ const PolicyPage1 = (props) => {
         </div>
         <div className="row bg mx-0">
           <Banner imgUrl={backgroundUrl} />
-          <div className={"col-lg-6 "+style3.policyForm}>
-            <div className={style1.join__form +" my-5"} id={style1.join}>
+          <div className={"col-lg-6 " + style3.policyForm}>
+            <div className={style1.join__form + " my-5"} id={style1.join}>
               <h3 className="text-center text-white"> {t("car1_request")}</h3>
               <form onSubmit={(e) => handleSubmit(e)} className="mt-4">
                 <div className="col-md-12 mb-3">

@@ -30,7 +30,7 @@ const NavbarL = () => {
           <picture>
             <source srcSet="./images/SarwaLifeNavLogo.webp" type="image/webp" />
             <img
-              alt="Sarwa Life Logo" 
+              alt="Sarwa Life Logo"
               src="./images/SarwaLifeNavLogo.webp"
               width="280"
               height="auto"
