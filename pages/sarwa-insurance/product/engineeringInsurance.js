@@ -4,11 +4,13 @@ const EngineeringInsurance = () => {
   return (
     <div>
       <Head>
-        <title>Sarwa Engineering Insurance Cover all Your Projects risks</title>
+        <title>
+          Sarwa Engineering Insurance &#45; Cover all Your Projects&#39; risks
+        </title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="description"
-          content="Sarwa Engineering Insurance handles all your projects risks our multidisciplinary capabilities make us qualified to provide you with total project coverage"
+          content="Sarwa Engineering Insurance handles all your projects&#39;	 risks&#59;	 our multidisciplinary capabilities make us qualified to provide you with total project coverage"
         />
       </Head>
       <PolicyPage8 />
