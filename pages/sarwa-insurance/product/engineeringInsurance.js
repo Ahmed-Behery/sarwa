@@ -4,9 +4,7 @@ const EngineeringInsurance = () => {
   return (
     <div>
       <Head>
-        <title>
-          Sarwa Engineering Insurance &#45; Cover all Your Projects&#39; risks
-        </title>
+        <title>Sarwa Engineering Insurance Cover all Your Projects risks</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="description"
